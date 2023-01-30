@@ -155,334 +155,6 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Login" enabled="true">
-          <boolProp name="TransactionController.includeTimers">false</boolProp>
-          <boolProp name="TransactionController.parent">true</boolProp>
-        </TransactionController>
-        <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Login modal" enabled="true">
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-              <collectionProp name="Arguments.arguments"/>
-            </elementProp>
-            <stringProp name="HTTPSampler.domain"></stringProp>
-            <stringProp name="HTTPSampler.port"></stringProp>
-            <stringProp name="HTTPSampler.protocol"></stringProp>
-            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">/login?returnUrl=%2Fcart</stringProp>
-            <stringProp name="HTTPSampler.method">GET</stringProp>
-            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-            <stringProp name="HTTPSampler.response_timeout"></stringProp>
-          </HTTPSamplerProxy>
-          <hashTree>
-            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-              <collectionProp name="HeaderManager.headers">
-                <elementProp name="accept" elementType="Header">
-                  <stringProp name="Header.name">accept</stringProp>
-                  <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9</stringProp>
-                </elementProp>
-                <elementProp name="accept-encoding" elementType="Header">
-                  <stringProp name="Header.name">accept-encoding</stringProp>
-                  <stringProp name="Header.value">gzip, deflate, br</stringProp>
-                </elementProp>
-                <elementProp name="accept-language" elementType="Header">
-                  <stringProp name="Header.name">accept-language</stringProp>
-                  <stringProp name="Header.value">en-US,en;q=0.9</stringProp>
-                </elementProp>
-                <elementProp name="cookie" elementType="Header">
-                  <stringProp name="Header.name">cookie</stringProp>
-                  <stringProp name="Header.value">.Nop.Antiforgery=CfDJ8Dhukxn1uxhNtwmV85iMKgeudpTdjl2sXbwWTnqzArx-oq0HyQpgs5ux8tFpUh8KZ3h604FrDtV-ov-nRkKC6OMPJTscTn-B2gaGyrlC4yuiNO9ifODTQCYeDnhYb3FCWNJ96pojzrtQnse2Sn3gCJo; _ga=GA1.2.220370839.1673518291; _gcl_au=1.1.851617932.1673962394; .Nop.Session=CfDJ8Lq3qIcO6ytCqFyhqkpa6tqKknZXwqzTrm6FlIzEIzhgZ25jhDp%2FfkcARFT6L5kV%2FmjfHVqQmaZ%2FsTeq0sZLY92Li6WJJxuD37jIUCO9CENl50EEhms%2BT%2BC9OMB0TgqyN9rOvCnl7yEy%2B7aVfHVpPzLlwZGB7o3APN7IyXN5zfOr; .Nop.RecentlyViewedProducts=18%2C1%2C25; __atuvc=1%7C3%2C14%7C4; .Nop.Authentication=CfDJ8Lq3qIcO6ytCqFyhqkpa6tqnq0F4d-luNABREFSvaSiJGsK4ca__jXTeXIOBKqQtEVnJwFNB9uPI0N0ug9xmEZNGEpboxFO7dAowTpJIdq_a0dRQ5b-Sj-j2FOG4LiCsAMpwSjWmyfweuUGrp0tj0BziNia_uoemO-o2-4bI-OjvJ5hr9dKoeClrmMVn5AmmenNJg0EMcmvtruvqq0-PiTT2lyZCg7dx6PbhpZODexQMnZrFlRaVlcDNyETsYHdIEiOea2ox4ixAsj8AFK4hSZ0iBmtp8p1MliPxhF1mRBG_QxB8x5xsiHJiPe4pzFYtg6Z_yk7lABmKlBWqENnQh7VxlcAi5c6pH5TWVu7lTpNxQxy23qHHUFUqSLRPApqD2w4fnxFgrNENDuBU-txloNceVQ-YHwp_APRiV8tBqf2-4I6oG5l4QtS29DwVXy2xTU3QlMdiXvXztT--FuYGu6ecI7qUehKA35MK3qO-xlyNbB5d79BHhp5JDnBUxSR5eP7F-F4RA7shFtSuzXatKgEWccOBO4l17X2ZUbrx2-5YsOeA3VH-RetVdOA1kcY36w; .Nop.Customer=36710b03-2a02-48c5-ab90-8df6c43fefc9; .Nop.Culture=c%3Den-US%7Cuic%3Den-US</stringProp>
-                </elementProp>
-                <elementProp name="referer" elementType="Header">
-                  <stringProp name="Header.name">referer</stringProp>
-                  <stringProp name="Header.value">https://demo.nopcommerce.com/registerresult/1?returnUrl=/cart</stringProp>
-                </elementProp>
-                <elementProp name="sec-ch-ua" elementType="Header">
-                  <stringProp name="Header.name">sec-ch-ua</stringProp>
-                  <stringProp name="Header.value">&quot;Not?A_Brand&quot;;v=&quot;8&quot;, &quot;Chromium&quot;;v=&quot;108&quot;, &quot;Microsoft Edge&quot;;v=&quot;108&quot;</stringProp>
-                </elementProp>
-                <elementProp name="sec-ch-ua-mobile" elementType="Header">
-                  <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
-                  <stringProp name="Header.value">?0</stringProp>
-                </elementProp>
-                <elementProp name="sec-ch-ua-platform" elementType="Header">
-                  <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
-                  <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
-                </elementProp>
-                <elementProp name="sec-fetch-dest" elementType="Header">
-                  <stringProp name="Header.name">sec-fetch-dest</stringProp>
-                  <stringProp name="Header.value">document</stringProp>
-                </elementProp>
-                <elementProp name="sec-fetch-mode" elementType="Header">
-                  <stringProp name="Header.name">sec-fetch-mode</stringProp>
-                  <stringProp name="Header.value">navigate</stringProp>
-                </elementProp>
-                <elementProp name="sec-fetch-site" elementType="Header">
-                  <stringProp name="Header.name">sec-fetch-site</stringProp>
-                  <stringProp name="Header.value">same-origin</stringProp>
-                </elementProp>
-                <elementProp name="sec-fetch-user" elementType="Header">
-                  <stringProp name="Header.name">sec-fetch-user</stringProp>
-                  <stringProp name="Header.value">?1</stringProp>
-                </elementProp>
-                <elementProp name="upgrade-insecure-requests" elementType="Header">
-                  <stringProp name="Header.name">upgrade-insecure-requests</stringProp>
-                  <stringProp name="Header.value">1</stringProp>
-                </elementProp>
-                <elementProp name="user-agent" elementType="Header">
-                  <stringProp name="Header.name">user-agent</stringProp>
-                  <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.76</stringProp>
-                </elementProp>
-              </collectionProp>
-            </HeaderManager>
-            <hashTree/>
-            <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="XPath Extractor-LoginToken" enabled="true">
-              <stringProp name="XPathExtractor.default">Not Found</stringProp>
-              <stringProp name="XPathExtractor.refname">LoginToken</stringProp>
-              <stringProp name="XPathExtractor.matchNumber">1</stringProp>
-              <stringProp name="XPathExtractor.xpathQuery">//input[@name=&apos;__RequestVerificationToken&apos;]/@value</stringProp>
-              <boolProp name="XPathExtractor.validate">false</boolProp>
-              <boolProp name="XPathExtractor.tolerant">true</boolProp>
-              <boolProp name="XPathExtractor.namespace">false</boolProp>
-            </XPathExtractor>
-            <hashTree/>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
-              <collectionProp name="Asserion.test_strings">
-                <stringProp name="29658141">nopCommerce demo store. Login</stringProp>
-              </collectionProp>
-              <stringProp name="Assertion.custom_message"></stringProp>
-              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
-              <boolProp name="Assertion.assume_success">false</boolProp>
-              <intProp name="Assertion.test_type">16</intProp>
-            </ResponseAssertion>
-            <hashTree/>
-          </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Login user" enabled="true">
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-              <collectionProp name="Arguments.arguments">
-                <elementProp name="Email" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.value">${Email}</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">Email</stringProp>
-                </elementProp>
-                <elementProp name="Password" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.value">${Password}</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">Password</stringProp>
-                </elementProp>
-                <elementProp name="__RequestVerificationToken" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.value">${LoginToken}</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">__RequestVerificationToken</stringProp>
-                </elementProp>
-                <elementProp name="RememberMe" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">false</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  <stringProp name="Argument.name">RememberMe</stringProp>
-                </elementProp>
-              </collectionProp>
-            </elementProp>
-            <stringProp name="HTTPSampler.domain"></stringProp>
-            <stringProp name="HTTPSampler.port">443</stringProp>
-            <stringProp name="HTTPSampler.protocol"></stringProp>
-            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">/login?returnurl=%2F</stringProp>
-            <stringProp name="HTTPSampler.method">POST</stringProp>
-            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-            <stringProp name="HTTPSampler.response_timeout"></stringProp>
-          </HTTPSamplerProxy>
-          <hashTree>
-            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-              <collectionProp name="HeaderManager.headers">
-                <elementProp name="accept" elementType="Header">
-                  <stringProp name="Header.name">accept</stringProp>
-                  <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9</stringProp>
-                </elementProp>
-                <elementProp name="accept-encoding" elementType="Header">
-                  <stringProp name="Header.name">accept-encoding</stringProp>
-                  <stringProp name="Header.value">gzip, deflate, br</stringProp>
-                </elementProp>
-                <elementProp name="accept-language" elementType="Header">
-                  <stringProp name="Header.name">accept-language</stringProp>
-                  <stringProp name="Header.value">en-US,en;q=0.9</stringProp>
-                </elementProp>
-                <elementProp name="cache-control" elementType="Header">
-                  <stringProp name="Header.name">cache-control</stringProp>
-                  <stringProp name="Header.value">max-age=0</stringProp>
-                </elementProp>
-                <elementProp name="content-length" elementType="Header">
-                  <stringProp name="Header.name">content-length</stringProp>
-                  <stringProp name="Header.value">291</stringProp>
-                </elementProp>
-                <elementProp name="content-type" elementType="Header">
-                  <stringProp name="Header.name">content-type</stringProp>
-                  <stringProp name="Header.value">application/x-www-form-urlencoded</stringProp>
-                </elementProp>
-                <elementProp name="cookie" elementType="Header">
-                  <stringProp name="Header.name">cookie</stringProp>
-                  <stringProp name="Header.value">.Nop.Antiforgery=CfDJ8Dhukxn1uxhNtwmV85iMKgeudpTdjl2sXbwWTnqzArx-oq0HyQpgs5ux8tFpUh8KZ3h604FrDtV-ov-nRkKC6OMPJTscTn-B2gaGyrlC4yuiNO9ifODTQCYeDnhYb3FCWNJ96pojzrtQnse2Sn3gCJo; _ga=GA1.2.220370839.1673518291; _gcl_au=1.1.851617932.1673962394; .Nop.Session=CfDJ8Lq3qIcO6ytCqFyhqkpa6tqKknZXwqzTrm6FlIzEIzhgZ25jhDp%2FfkcARFT6L5kV%2FmjfHVqQmaZ%2FsTeq0sZLY92Li6WJJxuD37jIUCO9CENl50EEhms%2BT%2BC9OMB0TgqyN9rOvCnl7yEy%2B7aVfHVpPzLlwZGB7o3APN7IyXN5zfOr; .Nop.RecentlyViewedProducts=18%2C1%2C25; __atuvc=1%7C3%2C14%7C4; .Nop.Authentication=CfDJ8Lq3qIcO6ytCqFyhqkpa6tq_yp7PuJ1YbzSW8pYa-X7mfQ3yk4QZV8Q7k5bZjDrjqG8zU7PyqEGGYp_sB7jXvQKOZx6Iu0RGWmaCfyKwkaFJzgyJkJrDVf5js1pwlps93qrEh4MppOTF0sU_WiKcVNWkQNbX7rjXNa8iBcxCcRyZOCZYUzVhRr2PAivfXcthyh1O-Ggybb0oCwuAdf49VjVuQcm797vjnYZOZdIkpH2qSI8YH0vuAyP06ULrosBeCmgH-SAt9osxlA3YON42UTFZ3o4dPWJu_Qkbf_d0YafofdOl3oo5AGXXCO86ZntgfQPpbFW_BmId6EUuF6Q1Id1UqBjznpkq1NObflejTl_hG4nwJZeHcrg3ENv4SFDMs7EwkCXb_W8YuzSwX7XR92B4emtyjrDojZuAG_HWuuek4ds2Z4Ebh5L4BEYsgcRyIkY7HONj3cW1T3ggBjb-nQ3m_sEGFuYo-4xT-4rFQlW0sNy658YxlRmhXokZMfV02HFF1TRtWGuCvu34_WvjKtiVsrp56ahJYjpJjBLAwlUtuVHxIiQlLPkMLJOPSR1UbX0nnhPAweoxwjNPSohoeOo; .Nop.Customer=6f92ba5c-4e23-4ba1-a7e0-537b6dc1c403; .Nop.Culture=c%3Den-US%7Cuic%3Den-US</stringProp>
-                </elementProp>
-                <elementProp name="origin" elementType="Header">
-                  <stringProp name="Header.name">origin</stringProp>
-                  <stringProp name="Header.value">https://demo.nopcommerce.com</stringProp>
-                </elementProp>
-                <elementProp name="referer" elementType="Header">
-                  <stringProp name="Header.name">referer</stringProp>
-                  <stringProp name="Header.value">https://demo.nopcommerce.com/login?returnUrl=%2Fcart</stringProp>
-                </elementProp>
-                <elementProp name="sec-ch-ua" elementType="Header">
-                  <stringProp name="Header.name">sec-ch-ua</stringProp>
-                  <stringProp name="Header.value">&quot;Not?A_Brand&quot;;v=&quot;8&quot;, &quot;Chromium&quot;;v=&quot;108&quot;, &quot;Microsoft Edge&quot;;v=&quot;108&quot;</stringProp>
-                </elementProp>
-                <elementProp name="sec-ch-ua-mobile" elementType="Header">
-                  <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
-                  <stringProp name="Header.value">?0</stringProp>
-                </elementProp>
-                <elementProp name="sec-ch-ua-platform" elementType="Header">
-                  <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
-                  <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
-                </elementProp>
-                <elementProp name="sec-fetch-dest" elementType="Header">
-                  <stringProp name="Header.name">sec-fetch-dest</stringProp>
-                  <stringProp name="Header.value">document</stringProp>
-                </elementProp>
-                <elementProp name="sec-fetch-mode" elementType="Header">
-                  <stringProp name="Header.name">sec-fetch-mode</stringProp>
-                  <stringProp name="Header.value">navigate</stringProp>
-                </elementProp>
-                <elementProp name="sec-fetch-site" elementType="Header">
-                  <stringProp name="Header.name">sec-fetch-site</stringProp>
-                  <stringProp name="Header.value">same-origin</stringProp>
-                </elementProp>
-                <elementProp name="sec-fetch-user" elementType="Header">
-                  <stringProp name="Header.name">sec-fetch-user</stringProp>
-                  <stringProp name="Header.value">?1</stringProp>
-                </elementProp>
-                <elementProp name="upgrade-insecure-requests" elementType="Header">
-                  <stringProp name="Header.name">upgrade-insecure-requests</stringProp>
-                  <stringProp name="Header.value">1</stringProp>
-                </elementProp>
-                <elementProp name="user-agent" elementType="Header">
-                  <stringProp name="Header.name">user-agent</stringProp>
-                  <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.76</stringProp>
-                </elementProp>
-              </collectionProp>
-            </HeaderManager>
-            <hashTree/>
-          </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Login-redirect" enabled="true">
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-              <collectionProp name="Arguments.arguments"/>
-            </elementProp>
-            <stringProp name="HTTPSampler.domain"></stringProp>
-            <stringProp name="HTTPSampler.port"></stringProp>
-            <stringProp name="HTTPSampler.protocol"></stringProp>
-            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">/</stringProp>
-            <stringProp name="HTTPSampler.method">GET</stringProp>
-            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-            <stringProp name="HTTPSampler.response_timeout"></stringProp>
-          </HTTPSamplerProxy>
-          <hashTree>
-            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-              <collectionProp name="HeaderManager.headers">
-                <elementProp name="accept" elementType="Header">
-                  <stringProp name="Header.name">accept</stringProp>
-                  <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9</stringProp>
-                </elementProp>
-                <elementProp name="accept-encoding" elementType="Header">
-                  <stringProp name="Header.name">accept-encoding</stringProp>
-                  <stringProp name="Header.value">gzip, deflate, br</stringProp>
-                </elementProp>
-                <elementProp name="accept-language" elementType="Header">
-                  <stringProp name="Header.name">accept-language</stringProp>
-                  <stringProp name="Header.value">en-US,en;q=0.9</stringProp>
-                </elementProp>
-                <elementProp name="cache-control" elementType="Header">
-                  <stringProp name="Header.name">cache-control</stringProp>
-                  <stringProp name="Header.value">max-age=0</stringProp>
-                </elementProp>
-                <elementProp name="cookie" elementType="Header">
-                  <stringProp name="Header.name">cookie</stringProp>
-                  <stringProp name="Header.value">.Nop.Antiforgery=CfDJ8Dhukxn1uxhNtwmV85iMKgeudpTdjl2sXbwWTnqzArx-oq0HyQpgs5ux8tFpUh8KZ3h604FrDtV-ov-nRkKC6OMPJTscTn-B2gaGyrlC4yuiNO9ifODTQCYeDnhYb3FCWNJ96pojzrtQnse2Sn3gCJo; _ga=GA1.2.220370839.1673518291; _gcl_au=1.1.851617932.1673962394; .Nop.Session=CfDJ8Lq3qIcO6ytCqFyhqkpa6tqKknZXwqzTrm6FlIzEIzhgZ25jhDp%2FfkcARFT6L5kV%2FmjfHVqQmaZ%2FsTeq0sZLY92Li6WJJxuD37jIUCO9CENl50EEhms%2BT%2BC9OMB0TgqyN9rOvCnl7yEy%2B7aVfHVpPzLlwZGB7o3APN7IyXN5zfOr; .Nop.RecentlyViewedProducts=18%2C1%2C25; __atuvc=1%7C3%2C14%7C4; .Nop.Culture=c%3Den-US%7Cuic%3Den-US; .Nop.Customer=36afd3e1-f42a-45fa-827f-464dde655dce; .Nop.Authentication=CfDJ8Lq3qIcO6ytCqFyhqkpa6toNaR6GPmb6gNfU2t08laEMa9b4F5YUp8WzqpzufDi-ezkkTrAzYa-0EV-zcABi8bnRPQ789kXEbgqb15YsQtKprTWII2Vb5m6FNLbSOtkjG4aR-7ru-ziR7iSfcfo1__E7McCjUV_46IpjiAhXD3DFg9ntDebacBE0AFbPClJwH3c61n23XnGoJu0U3b60F9nVljVLKG9Me9tqQb4jhqmJzEJ1kJjqFwOS0DTbAtbsdBrZLkbexkR0z1mTQo1CDjVZ2sqsJQOJzcd_-5QSoSJ8qcnheikThAvpTYI0efmCEf1usL45g7sYBr7jvQ47hrcu8NZw0riuYfOhb3TN35YIww39N2TJ8ZU35Mt1vYGjPUH_hV1m9e12870u2QeKM3hDzoJmfttO4rtsGt3UvB2NpurAXQqQbFcUK8zpKrpSTSsrPYL624KsjyyTXEALtxPgfwmBeYhvf4o6Q3SL9m5Gxu1STOYuOHRzhiDYchPLxVM_duT6pBfSsn8OByYundovEgiLt1UHDAoCLYg7OP7dgajEdjVNIQAUFXrAKVChTw</stringProp>
-                </elementProp>
-                <elementProp name="referer" elementType="Header">
-                  <stringProp name="Header.name">referer</stringProp>
-                  <stringProp name="Header.value">https://demo.nopcommerce.com/login?returnUrl=%2Fcart</stringProp>
-                </elementProp>
-                <elementProp name="sec-ch-ua" elementType="Header">
-                  <stringProp name="Header.name">sec-ch-ua</stringProp>
-                  <stringProp name="Header.value">&quot;Not?A_Brand&quot;;v=&quot;8&quot;, &quot;Chromium&quot;;v=&quot;108&quot;, &quot;Microsoft Edge&quot;;v=&quot;108&quot;</stringProp>
-                </elementProp>
-                <elementProp name="sec-ch-ua-mobile" elementType="Header">
-                  <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
-                  <stringProp name="Header.value">?0</stringProp>
-                </elementProp>
-                <elementProp name="sec-ch-ua-platform" elementType="Header">
-                  <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
-                  <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
-                </elementProp>
-                <elementProp name="sec-fetch-dest" elementType="Header">
-                  <stringProp name="Header.name">sec-fetch-dest</stringProp>
-                  <stringProp name="Header.value">document</stringProp>
-                </elementProp>
-                <elementProp name="sec-fetch-mode" elementType="Header">
-                  <stringProp name="Header.name">sec-fetch-mode</stringProp>
-                  <stringProp name="Header.value">navigate</stringProp>
-                </elementProp>
-                <elementProp name="sec-fetch-site" elementType="Header">
-                  <stringProp name="Header.name">sec-fetch-site</stringProp>
-                  <stringProp name="Header.value">same-origin</stringProp>
-                </elementProp>
-                <elementProp name="sec-fetch-user" elementType="Header">
-                  <stringProp name="Header.name">sec-fetch-user</stringProp>
-                  <stringProp name="Header.value">?1</stringProp>
-                </elementProp>
-                <elementProp name="upgrade-insecure-requests" elementType="Header">
-                  <stringProp name="Header.name">upgrade-insecure-requests</stringProp>
-                  <stringProp name="Header.value">1</stringProp>
-                </elementProp>
-                <elementProp name="user-agent" elementType="Header">
-                  <stringProp name="Header.name">user-agent</stringProp>
-                  <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.76</stringProp>
-                </elementProp>
-              </collectionProp>
-            </HeaderManager>
-            <hashTree/>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
-              <collectionProp name="Asserion.test_strings">
-                <stringProp name="1259646842">nopCommerce demo store</stringProp>
-              </collectionProp>
-              <stringProp name="Assertion.custom_message"></stringProp>
-              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
-              <boolProp name="Assertion.assume_success">false</boolProp>
-              <intProp name="Assertion.test_type">16</intProp>
-            </ResponseAssertion>
-            <hashTree/>
-          </hashTree>
-        </hashTree>
         <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Register user" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
           <boolProp name="TransactionController.parent">true</boolProp>
@@ -866,12 +538,12 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Build your own computer" enabled="true">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Login" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
           <boolProp name="TransactionController.parent">true</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Build your own computer" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Login modal" enabled="true">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
@@ -879,7 +551,7 @@
             <stringProp name="HTTPSampler.port"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">/build-your-own-computer</stringProp>
+            <stringProp name="HTTPSampler.path">/login?returnUrl=%2Fcart</stringProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -906,11 +578,11 @@
                 </elementProp>
                 <elementProp name="cookie" elementType="Header">
                   <stringProp name="Header.name">cookie</stringProp>
-                  <stringProp name="Header.value">_ga=GA1.2.220370839.1673518291; _gcl_au=1.1.851617932.1673962394; .Nop.Session=CfDJ8Lq3qIcO6ytCqFyhqkpa6tqKknZXwqzTrm6FlIzEIzhgZ25jhDp%2FfkcARFT6L5kV%2FmjfHVqQmaZ%2FsTeq0sZLY92Li6WJJxuD37jIUCO9CENl50EEhms%2BT%2BC9OMB0TgqyN9rOvCnl7yEy%2B7aVfHVpPzLlwZGB7o3APN7IyXN5zfOr; _gid=GA1.2.1181358752.1674643764; .Nop.Antiforgery=CfDJ8Lq3qIcO6ytCqFyhqkpa6to22pfD94KIyaWlcCdnF22QXj9_hgglLX_xwd2k6OgsyZKymHrKai7X0Lz8eDb9xspUUK6FS158O8GqJtzzOfVq4B9_2Mp27H9f3Mbdktg317ZCL46_Q56Pn8spRQMa13w; .Nop.RecentlyViewedProducts=18%2C1%2C25; __atuvc=1%7C3%2C28%7C4; .Nop.Authentication=CfDJ8Lq3qIcO6ytCqFyhqkpa6tpdwCogKu9PIW7Akcm5WiEVk_D2_1s4jSuUJSm7BkowOLtdUY5ubwLltTLHjf8L2qT3goNhdkZ-TFQiXnE71IvsYjXfq5-d7UqY8nVYFj9Dqxx6vuYcifF7bq-5FP3Ufzig3Vqs6_BerYtqijg20GLjG5VFXiz3lMtMkZEA-rFvwIh3bhGNscbiha5LcJRyazmlami26fW5B840S4V-3bovvrdlCZaxcwlWR0g2sOgmt-dtwv7ZUeW5A9CzxcWi3qmSYdLvRwTouOTrDGc2az53XxjZyqeRbHpapYwtwhR3nuSgsizJJHqj50EH0gGNI8gt2nhPkO9DW-zWfGcgqU34HbBUwgESdT2NbyD8OgV0ThY5LxH6ykKqNDr8sx7vtz4JlRqqYVIIL9IGqcHHfGn93fm7Y-H1gIGQggzN40c4TGPj9WRAQYSagS5pWksPzxsaGu9FKGwCsMidrMZve6sk12RnN28BhXJd_GiKggwNu6UH64F83vBlQvS9AStkfYwSheiRM9oe8_ebgwNWNJd2V38voXWh-SwQj1ZS-GrgFQ; .Nop.Customer=dde7bccc-65b0-4a37-80dc-3b41331d264e; .Nop.Culture=c%3Den-US%7Cuic%3Den-US</stringProp>
+                  <stringProp name="Header.value">.Nop.Antiforgery=CfDJ8Dhukxn1uxhNtwmV85iMKgeudpTdjl2sXbwWTnqzArx-oq0HyQpgs5ux8tFpUh8KZ3h604FrDtV-ov-nRkKC6OMPJTscTn-B2gaGyrlC4yuiNO9ifODTQCYeDnhYb3FCWNJ96pojzrtQnse2Sn3gCJo; _ga=GA1.2.220370839.1673518291; _gcl_au=1.1.851617932.1673962394; .Nop.Session=CfDJ8Lq3qIcO6ytCqFyhqkpa6tqKknZXwqzTrm6FlIzEIzhgZ25jhDp%2FfkcARFT6L5kV%2FmjfHVqQmaZ%2FsTeq0sZLY92Li6WJJxuD37jIUCO9CENl50EEhms%2BT%2BC9OMB0TgqyN9rOvCnl7yEy%2B7aVfHVpPzLlwZGB7o3APN7IyXN5zfOr; .Nop.RecentlyViewedProducts=18%2C1%2C25; __atuvc=1%7C3%2C14%7C4; .Nop.Authentication=CfDJ8Lq3qIcO6ytCqFyhqkpa6tqnq0F4d-luNABREFSvaSiJGsK4ca__jXTeXIOBKqQtEVnJwFNB9uPI0N0ug9xmEZNGEpboxFO7dAowTpJIdq_a0dRQ5b-Sj-j2FOG4LiCsAMpwSjWmyfweuUGrp0tj0BziNia_uoemO-o2-4bI-OjvJ5hr9dKoeClrmMVn5AmmenNJg0EMcmvtruvqq0-PiTT2lyZCg7dx6PbhpZODexQMnZrFlRaVlcDNyETsYHdIEiOea2ox4ixAsj8AFK4hSZ0iBmtp8p1MliPxhF1mRBG_QxB8x5xsiHJiPe4pzFYtg6Z_yk7lABmKlBWqENnQh7VxlcAi5c6pH5TWVu7lTpNxQxy23qHHUFUqSLRPApqD2w4fnxFgrNENDuBU-txloNceVQ-YHwp_APRiV8tBqf2-4I6oG5l4QtS29DwVXy2xTU3QlMdiXvXztT--FuYGu6ecI7qUehKA35MK3qO-xlyNbB5d79BHhp5JDnBUxSR5eP7F-F4RA7shFtSuzXatKgEWccOBO4l17X2ZUbrx2-5YsOeA3VH-RetVdOA1kcY36w; .Nop.Customer=36710b03-2a02-48c5-ab90-8df6c43fefc9; .Nop.Culture=c%3Den-US%7Cuic%3Den-US</stringProp>
                 </elementProp>
                 <elementProp name="referer" elementType="Header">
                   <stringProp name="Header.name">referer</stringProp>
-                  <stringProp name="Header.value">https://demo.nopcommerce.com/</stringProp>
+                  <stringProp name="Header.value">https://demo.nopcommerce.com/registerresult/1?returnUrl=/cart</stringProp>
                 </elementProp>
                 <elementProp name="sec-ch-ua" elementType="Header">
                   <stringProp name="Header.name">sec-ch-ua</stringProp>
@@ -947,6 +619,342 @@
                 <elementProp name="user-agent" elementType="Header">
                   <stringProp name="Header.name">user-agent</stringProp>
                   <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.76</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="XPath Extractor-LoginToken" enabled="true">
+              <stringProp name="XPathExtractor.default">Not Found</stringProp>
+              <stringProp name="XPathExtractor.refname">LoginToken</stringProp>
+              <stringProp name="XPathExtractor.matchNumber">1</stringProp>
+              <stringProp name="XPathExtractor.xpathQuery">//input[@name=&apos;__RequestVerificationToken&apos;]/@value</stringProp>
+              <boolProp name="XPathExtractor.validate">false</boolProp>
+              <boolProp name="XPathExtractor.tolerant">true</boolProp>
+              <boolProp name="XPathExtractor.namespace">false</boolProp>
+            </XPathExtractor>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="29658141">nopCommerce demo store. Login</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Login user" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="Email" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                  <stringProp name="Argument.value">${Email}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">Email</stringProp>
+                </elementProp>
+                <elementProp name="Password" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                  <stringProp name="Argument.value">${Password}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">Password</stringProp>
+                </elementProp>
+                <elementProp name="__RequestVerificationToken" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                  <stringProp name="Argument.value">${LoginToken}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">__RequestVerificationToken</stringProp>
+                </elementProp>
+                <elementProp name="RememberMe" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">false</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">RememberMe</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain"></stringProp>
+            <stringProp name="HTTPSampler.port">443</stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/login?returnurl=%2F</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="accept" elementType="Header">
+                  <stringProp name="Header.name">accept</stringProp>
+                  <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9</stringProp>
+                </elementProp>
+                <elementProp name="accept-encoding" elementType="Header">
+                  <stringProp name="Header.name">accept-encoding</stringProp>
+                  <stringProp name="Header.value">gzip, deflate, br</stringProp>
+                </elementProp>
+                <elementProp name="accept-language" elementType="Header">
+                  <stringProp name="Header.name">accept-language</stringProp>
+                  <stringProp name="Header.value">en-US,en;q=0.9</stringProp>
+                </elementProp>
+                <elementProp name="cache-control" elementType="Header">
+                  <stringProp name="Header.name">cache-control</stringProp>
+                  <stringProp name="Header.value">max-age=0</stringProp>
+                </elementProp>
+                <elementProp name="content-length" elementType="Header">
+                  <stringProp name="Header.name">content-length</stringProp>
+                  <stringProp name="Header.value">291</stringProp>
+                </elementProp>
+                <elementProp name="content-type" elementType="Header">
+                  <stringProp name="Header.name">content-type</stringProp>
+                  <stringProp name="Header.value">application/x-www-form-urlencoded</stringProp>
+                </elementProp>
+                <elementProp name="cookie" elementType="Header">
+                  <stringProp name="Header.name">cookie</stringProp>
+                  <stringProp name="Header.value">.Nop.Antiforgery=CfDJ8Dhukxn1uxhNtwmV85iMKgeudpTdjl2sXbwWTnqzArx-oq0HyQpgs5ux8tFpUh8KZ3h604FrDtV-ov-nRkKC6OMPJTscTn-B2gaGyrlC4yuiNO9ifODTQCYeDnhYb3FCWNJ96pojzrtQnse2Sn3gCJo; _ga=GA1.2.220370839.1673518291; _gcl_au=1.1.851617932.1673962394; .Nop.Session=CfDJ8Lq3qIcO6ytCqFyhqkpa6tqKknZXwqzTrm6FlIzEIzhgZ25jhDp%2FfkcARFT6L5kV%2FmjfHVqQmaZ%2FsTeq0sZLY92Li6WJJxuD37jIUCO9CENl50EEhms%2BT%2BC9OMB0TgqyN9rOvCnl7yEy%2B7aVfHVpPzLlwZGB7o3APN7IyXN5zfOr; .Nop.RecentlyViewedProducts=18%2C1%2C25; __atuvc=1%7C3%2C14%7C4; .Nop.Authentication=CfDJ8Lq3qIcO6ytCqFyhqkpa6tq_yp7PuJ1YbzSW8pYa-X7mfQ3yk4QZV8Q7k5bZjDrjqG8zU7PyqEGGYp_sB7jXvQKOZx6Iu0RGWmaCfyKwkaFJzgyJkJrDVf5js1pwlps93qrEh4MppOTF0sU_WiKcVNWkQNbX7rjXNa8iBcxCcRyZOCZYUzVhRr2PAivfXcthyh1O-Ggybb0oCwuAdf49VjVuQcm797vjnYZOZdIkpH2qSI8YH0vuAyP06ULrosBeCmgH-SAt9osxlA3YON42UTFZ3o4dPWJu_Qkbf_d0YafofdOl3oo5AGXXCO86ZntgfQPpbFW_BmId6EUuF6Q1Id1UqBjznpkq1NObflejTl_hG4nwJZeHcrg3ENv4SFDMs7EwkCXb_W8YuzSwX7XR92B4emtyjrDojZuAG_HWuuek4ds2Z4Ebh5L4BEYsgcRyIkY7HONj3cW1T3ggBjb-nQ3m_sEGFuYo-4xT-4rFQlW0sNy658YxlRmhXokZMfV02HFF1TRtWGuCvu34_WvjKtiVsrp56ahJYjpJjBLAwlUtuVHxIiQlLPkMLJOPSR1UbX0nnhPAweoxwjNPSohoeOo; .Nop.Customer=6f92ba5c-4e23-4ba1-a7e0-537b6dc1c403; .Nop.Culture=c%3Den-US%7Cuic%3Den-US</stringProp>
+                </elementProp>
+                <elementProp name="origin" elementType="Header">
+                  <stringProp name="Header.name">origin</stringProp>
+                  <stringProp name="Header.value">https://demo.nopcommerce.com</stringProp>
+                </elementProp>
+                <elementProp name="referer" elementType="Header">
+                  <stringProp name="Header.name">referer</stringProp>
+                  <stringProp name="Header.value">https://demo.nopcommerce.com/login?returnUrl=%2Fcart</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua</stringProp>
+                  <stringProp name="Header.value">&quot;Not?A_Brand&quot;;v=&quot;8&quot;, &quot;Chromium&quot;;v=&quot;108&quot;, &quot;Microsoft Edge&quot;;v=&quot;108&quot;</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-mobile" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
+                  <stringProp name="Header.value">?0</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-platform" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
+                  <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
+                </elementProp>
+                <elementProp name="sec-fetch-dest" elementType="Header">
+                  <stringProp name="Header.name">sec-fetch-dest</stringProp>
+                  <stringProp name="Header.value">document</stringProp>
+                </elementProp>
+                <elementProp name="sec-fetch-mode" elementType="Header">
+                  <stringProp name="Header.name">sec-fetch-mode</stringProp>
+                  <stringProp name="Header.value">navigate</stringProp>
+                </elementProp>
+                <elementProp name="sec-fetch-site" elementType="Header">
+                  <stringProp name="Header.name">sec-fetch-site</stringProp>
+                  <stringProp name="Header.value">same-origin</stringProp>
+                </elementProp>
+                <elementProp name="sec-fetch-user" elementType="Header">
+                  <stringProp name="Header.name">sec-fetch-user</stringProp>
+                  <stringProp name="Header.value">?1</stringProp>
+                </elementProp>
+                <elementProp name="upgrade-insecure-requests" elementType="Header">
+                  <stringProp name="Header.name">upgrade-insecure-requests</stringProp>
+                  <stringProp name="Header.value">1</stringProp>
+                </elementProp>
+                <elementProp name="user-agent" elementType="Header">
+                  <stringProp name="Header.name">user-agent</stringProp>
+                  <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.76</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Login-redirect" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain"></stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="accept" elementType="Header">
+                  <stringProp name="Header.name">accept</stringProp>
+                  <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9</stringProp>
+                </elementProp>
+                <elementProp name="accept-encoding" elementType="Header">
+                  <stringProp name="Header.name">accept-encoding</stringProp>
+                  <stringProp name="Header.value">gzip, deflate, br</stringProp>
+                </elementProp>
+                <elementProp name="accept-language" elementType="Header">
+                  <stringProp name="Header.name">accept-language</stringProp>
+                  <stringProp name="Header.value">en-US,en;q=0.9</stringProp>
+                </elementProp>
+                <elementProp name="cache-control" elementType="Header">
+                  <stringProp name="Header.name">cache-control</stringProp>
+                  <stringProp name="Header.value">max-age=0</stringProp>
+                </elementProp>
+                <elementProp name="cookie" elementType="Header">
+                  <stringProp name="Header.name">cookie</stringProp>
+                  <stringProp name="Header.value">.Nop.Antiforgery=CfDJ8Dhukxn1uxhNtwmV85iMKgeudpTdjl2sXbwWTnqzArx-oq0HyQpgs5ux8tFpUh8KZ3h604FrDtV-ov-nRkKC6OMPJTscTn-B2gaGyrlC4yuiNO9ifODTQCYeDnhYb3FCWNJ96pojzrtQnse2Sn3gCJo; _ga=GA1.2.220370839.1673518291; _gcl_au=1.1.851617932.1673962394; .Nop.Session=CfDJ8Lq3qIcO6ytCqFyhqkpa6tqKknZXwqzTrm6FlIzEIzhgZ25jhDp%2FfkcARFT6L5kV%2FmjfHVqQmaZ%2FsTeq0sZLY92Li6WJJxuD37jIUCO9CENl50EEhms%2BT%2BC9OMB0TgqyN9rOvCnl7yEy%2B7aVfHVpPzLlwZGB7o3APN7IyXN5zfOr; .Nop.RecentlyViewedProducts=18%2C1%2C25; __atuvc=1%7C3%2C14%7C4; .Nop.Culture=c%3Den-US%7Cuic%3Den-US; .Nop.Customer=36afd3e1-f42a-45fa-827f-464dde655dce; .Nop.Authentication=CfDJ8Lq3qIcO6ytCqFyhqkpa6toNaR6GPmb6gNfU2t08laEMa9b4F5YUp8WzqpzufDi-ezkkTrAzYa-0EV-zcABi8bnRPQ789kXEbgqb15YsQtKprTWII2Vb5m6FNLbSOtkjG4aR-7ru-ziR7iSfcfo1__E7McCjUV_46IpjiAhXD3DFg9ntDebacBE0AFbPClJwH3c61n23XnGoJu0U3b60F9nVljVLKG9Me9tqQb4jhqmJzEJ1kJjqFwOS0DTbAtbsdBrZLkbexkR0z1mTQo1CDjVZ2sqsJQOJzcd_-5QSoSJ8qcnheikThAvpTYI0efmCEf1usL45g7sYBr7jvQ47hrcu8NZw0riuYfOhb3TN35YIww39N2TJ8ZU35Mt1vYGjPUH_hV1m9e12870u2QeKM3hDzoJmfttO4rtsGt3UvB2NpurAXQqQbFcUK8zpKrpSTSsrPYL624KsjyyTXEALtxPgfwmBeYhvf4o6Q3SL9m5Gxu1STOYuOHRzhiDYchPLxVM_duT6pBfSsn8OByYundovEgiLt1UHDAoCLYg7OP7dgajEdjVNIQAUFXrAKVChTw</stringProp>
+                </elementProp>
+                <elementProp name="referer" elementType="Header">
+                  <stringProp name="Header.name">referer</stringProp>
+                  <stringProp name="Header.value">https://demo.nopcommerce.com/login?returnUrl=%2Fcart</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua</stringProp>
+                  <stringProp name="Header.value">&quot;Not?A_Brand&quot;;v=&quot;8&quot;, &quot;Chromium&quot;;v=&quot;108&quot;, &quot;Microsoft Edge&quot;;v=&quot;108&quot;</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-mobile" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
+                  <stringProp name="Header.value">?0</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-platform" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
+                  <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
+                </elementProp>
+                <elementProp name="sec-fetch-dest" elementType="Header">
+                  <stringProp name="Header.name">sec-fetch-dest</stringProp>
+                  <stringProp name="Header.value">document</stringProp>
+                </elementProp>
+                <elementProp name="sec-fetch-mode" elementType="Header">
+                  <stringProp name="Header.name">sec-fetch-mode</stringProp>
+                  <stringProp name="Header.value">navigate</stringProp>
+                </elementProp>
+                <elementProp name="sec-fetch-site" elementType="Header">
+                  <stringProp name="Header.name">sec-fetch-site</stringProp>
+                  <stringProp name="Header.value">same-origin</stringProp>
+                </elementProp>
+                <elementProp name="sec-fetch-user" elementType="Header">
+                  <stringProp name="Header.name">sec-fetch-user</stringProp>
+                  <stringProp name="Header.value">?1</stringProp>
+                </elementProp>
+                <elementProp name="upgrade-insecure-requests" elementType="Header">
+                  <stringProp name="Header.name">upgrade-insecure-requests</stringProp>
+                  <stringProp name="Header.value">1</stringProp>
+                </elementProp>
+                <elementProp name="user-agent" elementType="Header">
+                  <stringProp name="Header.name">user-agent</stringProp>
+                  <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.76</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="1259646842">nopCommerce demo store</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Build your own computer" enabled="true">
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+          <boolProp name="TransactionController.parent">true</boolProp>
+        </TransactionController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Build your own computer" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain"></stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/build-your-own-computer</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="accept" elementType="Header">
+                  <stringProp name="Header.name">accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+                <elementProp name="accept-encoding" elementType="Header">
+                  <stringProp name="Header.name">accept-encoding</stringProp>
+                  <stringProp name="Header.value">gzip, deflate, br</stringProp>
+                </elementProp>
+                <elementProp name="accept-language" elementType="Header">
+                  <stringProp name="Header.name">accept-language</stringProp>
+                  <stringProp name="Header.value">en-US,en;q=0.9</stringProp>
+                </elementProp>
+                <elementProp name="content-length" elementType="Header">
+                  <stringProp name="Header.name">content-length</stringProp>
+                  <stringProp name="Header.value">366</stringProp>
+                </elementProp>
+                <elementProp name="content-type" elementType="Header">
+                  <stringProp name="Header.name">content-type</stringProp>
+                  <stringProp name="Header.value">application/x-www-form-urlencoded; charset=UTF-8</stringProp>
+                </elementProp>
+                <elementProp name="cookie" elementType="Header">
+                  <stringProp name="Header.name">cookie</stringProp>
+                  <stringProp name="Header.value">.Nop.Antiforgery=CfDJ8Dhukxn1uxhNtwmV85iMKgeudpTdjl2sXbwWTnqzArx-oq0HyQpgs5ux8tFpUh8KZ3h604FrDtV-ov-nRkKC6OMPJTscTn-B2gaGyrlC4yuiNO9ifODTQCYeDnhYb3FCWNJ96pojzrtQnse2Sn3gCJo; _ga=GA1.2.220370839.1673518291; _gcl_au=1.1.851617932.1673962394; _gid=GA1.2.1595425104.1674407699; .Nop.Session=CfDJ8Lq3qIcO6ytCqFyhqkpa6tqKknZXwqzTrm6FlIzEIzhgZ25jhDp%2FfkcARFT6L5kV%2FmjfHVqQmaZ%2FsTeq0sZLY92Li6WJJxuD37jIUCO9CENl50EEhms%2BT%2BC9OMB0TgqyN9rOvCnl7yEy%2B7aVfHVpPzLlwZGB7o3APN7IyXN5zfOr; .Nop.Authentication=CfDJ8Lq3qIcO6ytCqFyhqkpa6tqpm4GLAcH9L4M5S6nR1KB8tYzjIZoetp0ux308YOO31T_45TN3JtUaPA1aCvFZvu1iTiLAxHHf4x1VWzIiKeoBTrgdoIenTYhf4HSi_PATcHczMmIhjPVay3ztaEplbLDgLqlnP-A-oDZAz9tC5zZgG8W63nqvSyv4oQxbaVX1IcZlsW1nrLhovkfVDlSkq-dmGHFn_cvRw8WgtF5mhq_o7Di82taUI0eeBk2GuU0g11DNjO912YK1V1cGPCALAPJaNFe4Jo3-4RMe77hAoVlJF-Hs9WEBotXY8wTsGvzU2MF3FdAAaRjcTvx833a_vpzcLBSwTVqizbLwLwHUqh1rLYwAiu9sgo7u26-UNkqy_7TvMIlAszJAZHD8VaHgdQwVjW_a4QplX7aKUJwloIBWCe-M8HRVV_3Gq2mCg58rawcNVsUrmb86jgNftB0WMfqSihDEktIz43188xYh9HrftejxhWOkpMXSYpaxN5QqjQIaJe-NHxzqhI2_FzMGzk22Fcrpwy7DZUP1dlLXivXvzucskIb9zKZH7S4mciiFLA; .Nop.RecentlyViewedProducts=1%2C25; __atuvc=1%7C3%2C4%7C4; __atuvs=63cfa4dc4dac8a7f000; .Nop.Customer=c76dc584-3990-4c57-b26b-fd340074d912; .Nop.Culture=c%3Den-US%7Cuic%3Den-US</stringProp>
+                </elementProp>
+                <elementProp name="origin&#x9;https" elementType="Header">
+                  <stringProp name="Header.name">origin	https</stringProp>
+                  <stringProp name="Header.value">//demo.nopcommerce.com</stringProp>
+                </elementProp>
+                <elementProp name="referer&#x9;https" elementType="Header">
+                  <stringProp name="Header.name">referer	https</stringProp>
+                  <stringProp name="Header.value">//demo.nopcommerce.com/build-your-own-computer</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua</stringProp>
+                  <stringProp name="Header.value">&quot;Not?A_Brand&quot;;v=&quot;8&quot;, &quot;Chromium&quot;;v=&quot;108&quot;, &quot;Microsoft Edge&quot;;v=&quot;108&quot;</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-mobile" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
+                  <stringProp name="Header.value">?0</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-platform" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
+                  <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
+                </elementProp>
+                <elementProp name="sec-fetch-dest" elementType="Header">
+                  <stringProp name="Header.name">sec-fetch-dest</stringProp>
+                  <stringProp name="Header.value">empty</stringProp>
+                </elementProp>
+                <elementProp name="sec-fetch-mode" elementType="Header">
+                  <stringProp name="Header.name">sec-fetch-mode</stringProp>
+                  <stringProp name="Header.value">cors</stringProp>
+                </elementProp>
+                <elementProp name="sec-fetch-site" elementType="Header">
+                  <stringProp name="Header.name">sec-fetch-site</stringProp>
+                  <stringProp name="Header.value">same-origin</stringProp>
+                </elementProp>
+                <elementProp name="user-agent" elementType="Header">
+                  <stringProp name="Header.name">user-agent</stringProp>
+                  <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.76</stringProp>
+                </elementProp>
+                <elementProp name="x-requested-with" elementType="Header">
+                  <stringProp name="Header.name">x-requested-with</stringProp>
+                  <stringProp name="Header.value">XMLHttpRequest</stringProp>
                 </elementProp>
               </collectionProp>
             </HeaderManager>
@@ -1011,9 +1019,9 @@
               <boolProp name="XPathExtractor.namespace">false</boolProp>
             </XPathExtractor>
             <hashTree/>
-            <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="XPath Extractor- ProductComputerId" enabled="true">
+            <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="XPath Extractor- ProductId" enabled="true">
               <stringProp name="XPathExtractor.default">Not Found</stringProp>
-              <stringProp name="XPathExtractor.refname">ProductComputerId</stringProp>
+              <stringProp name="XPathExtractor.refname">ProductId</stringProp>
               <stringProp name="XPathExtractor.matchNumber">1</stringProp>
               <stringProp name="XPathExtractor.xpathQuery">//div/@data-productid</stringProp>
               <boolProp name="XPathExtractor.validate">false</boolProp>
@@ -1082,7 +1090,7 @@
                 </elementProp>
                 <elementProp name="addtocart_${ProductId}.EnteredQuantity" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.value">${ComputerQuantity}</stringProp>
+                  <stringProp name="Argument.value">${Quantity}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   <stringProp name="Argument.name">addtocart_${ProductId}.EnteredQuantity</stringProp>
@@ -1100,7 +1108,7 @@
             <stringProp name="HTTPSampler.port"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">/addproducttocart/details/${ProductComputerId}/${ProductComputerId}</stringProp>
+            <stringProp name="HTTPSampler.path">/addproducttocart/details/1/1</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1135,7 +1143,7 @@
                 </elementProp>
                 <elementProp name="cookie" elementType="Header">
                   <stringProp name="Header.name">cookie</stringProp>
-                  <stringProp name="Header.value">_ga=GA1.2.220370839.1673518291; _gcl_au=1.1.851617932.1673962394; .Nop.Session=CfDJ8Lq3qIcO6ytCqFyhqkpa6tqKknZXwqzTrm6FlIzEIzhgZ25jhDp%2FfkcARFT6L5kV%2FmjfHVqQmaZ%2FsTeq0sZLY92Li6WJJxuD37jIUCO9CENl50EEhms%2BT%2BC9OMB0TgqyN9rOvCnl7yEy%2B7aVfHVpPzLlwZGB7o3APN7IyXN5zfOr; _gid=GA1.2.1181358752.1674643764; .Nop.Antiforgery=CfDJ8Lq3qIcO6ytCqFyhqkpa6to22pfD94KIyaWlcCdnF22QXj9_hgglLX_xwd2k6OgsyZKymHrKai7X0Lz8eDb9xspUUK6FS158O8GqJtzzOfVq4B9_2Mp27H9f3Mbdktg317ZCL46_Q56Pn8spRQMa13w; .Nop.Authentication=CfDJ8Lq3qIcO6ytCqFyhqkpa6toX2vQCl_z-7HyVIaqT2CjcQOrA4Z9zf_Fpk8AmavIBXGC6JhsyFJ4es1t6w35akNgWd1N6hTtqdZU00OYS5VZoN1T2RkY7XUfhhYXrU4T5jpeEqZsnzQk1rLNjBbllXYzUEWgF3CJWqCJLVuFEktcm-F0pG6goNoEQ2jZN0bGWZ9iQJsUGIOUshTYyaJ5ZF1SA99EEeUspjIflEByGypUPHhnaCujJvvdBm3cTUPUyHGdFCECYQKUTim3qxuc3Y7gVSDI5FN1vtQh859aJFD94g5Son6KSy7zy_EHEpBj-D_ilmCigyh-XNeRy0ZG_VNdVkffCVYflfVtwOkyXOVFO1Yk7aZfNOL2Yx3XJXHXsRcPE-X5YXxNhwqppcHsJp06wpnbG0s_wHu09tG3kzOIWifBEfs5MTfWQyBhEdqRwcBIu1Whm65zZwZqQ_IllxyZ1caOKMSMlFwytMXDvsM26Z0Q7YtkJTGDY4lEvrZgRgxfBmWfr6n-weqlvezS1yJiFjXHAh0k_5XTizw_ZtokeWYUZowF_aXCMEYMrcloDWQ; .Nop.RecentlyViewedProducts=18%2C1%2C25; __atuvc=1%7C3%2C27%7C4; __atuvs=63d14aeeb32b41fe001; .Nop.Customer=2a15fee1-5ae2-4ea1-88eb-5d123da25af9; .Nop.Culture=c%3Den-US%7Cuic%3Den-US</stringProp>
+                  <stringProp name="Header.value">.Nop.Antiforgery=CfDJ8Dhukxn1uxhNtwmV85iMKgeudpTdjl2sXbwWTnqzArx-oq0HyQpgs5ux8tFpUh8KZ3h604FrDtV-ov-nRkKC6OMPJTscTn-B2gaGyrlC4yuiNO9ifODTQCYeDnhYb3FCWNJ96pojzrtQnse2Sn3gCJo; _ga=GA1.2.220370839.1673518291; _gcl_au=1.1.851617932.1673962394; _gid=GA1.2.1595425104.1674407699; .Nop.Session=CfDJ8Lq3qIcO6ytCqFyhqkpa6tqKknZXwqzTrm6FlIzEIzhgZ25jhDp%2FfkcARFT6L5kV%2FmjfHVqQmaZ%2FsTeq0sZLY92Li6WJJxuD37jIUCO9CENl50EEhms%2BT%2BC9OMB0TgqyN9rOvCnl7yEy%2B7aVfHVpPzLlwZGB7o3APN7IyXN5zfOr; .Nop.Authentication=CfDJ8Lq3qIcO6ytCqFyhqkpa6tqpm4GLAcH9L4M5S6nR1KB8tYzjIZoetp0ux308YOO31T_45TN3JtUaPA1aCvFZvu1iTiLAxHHf4x1VWzIiKeoBTrgdoIenTYhf4HSi_PATcHczMmIhjPVay3ztaEplbLDgLqlnP-A-oDZAz9tC5zZgG8W63nqvSyv4oQxbaVX1IcZlsW1nrLhovkfVDlSkq-dmGHFn_cvRw8WgtF5mhq_o7Di82taUI0eeBk2GuU0g11DNjO912YK1V1cGPCALAPJaNFe4Jo3-4RMe77hAoVlJF-Hs9WEBotXY8wTsGvzU2MF3FdAAaRjcTvx833a_vpzcLBSwTVqizbLwLwHUqh1rLYwAiu9sgo7u26-UNkqy_7TvMIlAszJAZHD8VaHgdQwVjW_a4QplX7aKUJwloIBWCe-M8HRVV_3Gq2mCg58rawcNVsUrmb86jgNftB0WMfqSihDEktIz43188xYh9HrftejxhWOkpMXSYpaxN5QqjQIaJe-NHxzqhI2_FzMGzk22Fcrpwy7DZUP1dlLXivXvzucskIb9zKZH7S4mciiFLA; .Nop.RecentlyViewedProducts=1%2C25; __atuvc=1%7C3%2C4%7C4; __atuvs=63cfa4dc4dac8a7f000; .Nop.Customer=c76dc584-3990-4c57-b26b-fd340074d912; .Nop.Culture=c%3Den-US%7Cuic%3Den-US</stringProp>
                 </elementProp>
                 <elementProp name="origin" elementType="Header">
                   <stringProp name="Header.name">origin</stringProp>
@@ -1182,7 +1190,7 @@
             <hashTree/>
             <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="User Parameters" enabled="true">
               <collectionProp name="UserParameters.names">
-                <stringProp name="-1634123546">ComputerQuantity</stringProp>
+                <stringProp name="-1220360021">Quantity</stringProp>
               </collectionProp>
               <collectionProp name="UserParameters.thread_values">
                 <collectionProp name="-560831486">
@@ -1194,7 +1202,7 @@
             <hashTree/>
             <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion" enabled="true">
               <stringProp name="JSON_PATH">$.message</stringProp>
-              <stringProp name="EXPECTED_VALUE">The product has been added to your &lt;a href=\&quot;/cart\&quot;&gt;shopping cart</stringProp>
+              <stringProp name="EXPECTED_VALUE">The product has been added to your &lt;a href=\&quot;/cart\&quot;&gt;shopping cart&lt;/a&gt;</stringProp>
               <boolProp name="JSONVALIDATION">true</boolProp>
               <boolProp name="EXPECT_NULL">false</boolProp>
               <boolProp name="INVERT">false</boolProp>
@@ -1275,7 +1283,7 @@
             <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="XPath Extractor- CountryId" enabled="true">
               <stringProp name="XPathExtractor.default">Not Found</stringProp>
               <stringProp name="XPathExtractor.refname">CountryId</stringProp>
-              <stringProp name="XPathExtractor.matchNumber">0</stringProp>
+              <stringProp name="XPathExtractor.matchNumber">1</stringProp>
               <stringProp name="XPathExtractor.xpathQuery">//select[@id=&apos;CountryId&apos;]/option/@value</stringProp>
               <boolProp name="XPathExtractor.validate">false</boolProp>
               <boolProp name="XPathExtractor.tolerant">true</boolProp>
@@ -1285,7 +1293,7 @@
             <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="XPath Extractor- StateProvinceId" enabled="true">
               <stringProp name="XPathExtractor.default">Not Found</stringProp>
               <stringProp name="XPathExtractor.refname">StateProvinceId</stringProp>
-              <stringProp name="XPathExtractor.matchNumber">1</stringProp>
+              <stringProp name="XPathExtractor.matchNumber">0</stringProp>
               <stringProp name="XPathExtractor.xpathQuery">//select[@id=&apos;StateProvinceId&apos;]/option/@value</stringProp>
               <boolProp name="XPathExtractor.validate">false</boolProp>
               <boolProp name="XPathExtractor.tolerant">true</boolProp>
@@ -1312,6 +1320,16 @@
               <intProp name="Assertion.test_type">16</intProp>
             </ResponseAssertion>
             <hashTree/>
+            <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="XPath Extractor- ItemRemoveId" enabled="true">
+              <stringProp name="XPathExtractor.default">Not Found</stringProp>
+              <stringProp name="XPathExtractor.refname">ItemRemoveId</stringProp>
+              <stringProp name="XPathExtractor.matchNumber">1</stringProp>
+              <stringProp name="XPathExtractor.xpathQuery">//input[@name=&apos;removefromcart&apos;]/@value</stringProp>
+              <boolProp name="XPathExtractor.validate">false</boolProp>
+              <boolProp name="XPathExtractor.tolerant">true</boolProp>
+              <boolProp name="XPathExtractor.namespace">false</boolProp>
+            </XPathExtractor>
+            <hashTree/>
           </hashTree>
         </hashTree>
         <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Checkout" enabled="true">
@@ -1322,10 +1340,10 @@
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Checkout" enabled="true">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments">
-                <elementProp name="itemquantity11243" elementType="HTTPArgument">
+                <elementProp name="itemquantity${ItemRemoveId}" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.name">itemquantity11243</stringProp>
-                  <stringProp name="Argument.value">${ComputerQuantity}</stringProp>
+                  <stringProp name="Argument.name">itemquantity${ItemRemoveId}</stringProp>
+                  <stringProp name="Argument.value">${Quantity}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
@@ -1360,14 +1378,14 @@
                 <elementProp name="discountcouponcode" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">discountcouponcode</stringProp>
-                  <stringProp name="Argument.value">${Discountcouponcode}</stringProp>
+                  <stringProp name="Argument.value"></stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="giftcardcouponcode" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">giftcardcouponcode</stringProp>
-                  <stringProp name="Argument.value">${Giftcardcouponcode}</stringProp>
+                  <stringProp name="Argument.value"></stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
@@ -1413,49 +1431,81 @@
           <hashTree>
             <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
               <collectionProp name="HeaderManager.headers">
-                <elementProp name="Sec-Fetch-Mode" elementType="Header">
-                  <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
-                  <stringProp name="Header.value">navigate</stringProp>
+                <elementProp name="accept" elementType="Header">
+                  <stringProp name="Header.name">accept</stringProp>
+                  <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9</stringProp>
                 </elementProp>
-                <elementProp name="Referer" elementType="Header">
-                  <stringProp name="Header.name">Referer</stringProp>
-                  <stringProp name="Header.value">${scheme}://${host}/cart</stringProp>
-                </elementProp>
-                <elementProp name="Sec-Fetch-Site" elementType="Header">
-                  <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
-                  <stringProp name="Header.value">same-origin</stringProp>
-                </elementProp>
-                <elementProp name="Accept-Language" elementType="Header">
-                  <stringProp name="Header.name">Accept-Language</stringProp>
-                  <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
-                </elementProp>
-                <elementProp name="Origin" elementType="Header">
-                  <stringProp name="Header.name">Origin</stringProp>
-                  <stringProp name="Header.value">${scheme}://${host}</stringProp>
-                </elementProp>
-                <elementProp name="Sec-Fetch-User" elementType="Header">
-                  <stringProp name="Header.name">Sec-Fetch-User</stringProp>
-                  <stringProp name="Header.value">?1</stringProp>
-                </elementProp>
-                <elementProp name="Accept" elementType="Header">
-                  <stringProp name="Header.name">Accept</stringProp>
-                  <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8</stringProp>
-                </elementProp>
-                <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
-                  <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
-                  <stringProp name="Header.value">1</stringProp>
-                </elementProp>
-                <elementProp name="Accept-Encoding" elementType="Header">
-                  <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <elementProp name="accept-encoding" elementType="Header">
+                  <stringProp name="Header.name">accept-encoding</stringProp>
                   <stringProp name="Header.value">gzip, deflate, br</stringProp>
                 </elementProp>
-                <elementProp name="User-Agent" elementType="Header">
-                  <stringProp name="Header.name">User-Agent</stringProp>
-                  <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/109.0</stringProp>
+                <elementProp name="accept-language" elementType="Header">
+                  <stringProp name="Header.name">accept-language</stringProp>
+                  <stringProp name="Header.value">en-US,en;q=0.9</stringProp>
                 </elementProp>
-                <elementProp name="Sec-Fetch-Dest" elementType="Header">
-                  <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
+                <elementProp name="cache-control" elementType="Header">
+                  <stringProp name="Header.name">cache-control</stringProp>
+                  <stringProp name="Header.value">no-cache</stringProp>
+                </elementProp>
+                <elementProp name="content-length" elementType="Header">
+                  <stringProp name="Header.name">content-length</stringProp>
+                  <stringProp name="Header.value">1284</stringProp>
+                </elementProp>
+                <elementProp name="content-type" elementType="Header">
+                  <stringProp name="Header.name">content-type</stringProp>
+                  <stringProp name="Header.value">multipart/form-data; boundary=----WebKitFormBoundary3KBe9J6oBVJ2lSV7</stringProp>
+                </elementProp>
+                <elementProp name="cookie" elementType="Header">
+                  <stringProp name="Header.name">cookie</stringProp>
+                  <stringProp name="Header.value">_ga=GA1.2.220370839.1673518291; _gcl_au=1.1.851617932.1673962394; .Nop.Session=CfDJ8Lq3qIcO6ytCqFyhqkpa6tqKknZXwqzTrm6FlIzEIzhgZ25jhDp%2FfkcARFT6L5kV%2FmjfHVqQmaZ%2FsTeq0sZLY92Li6WJJxuD37jIUCO9CENl50EEhms%2BT%2BC9OMB0TgqyN9rOvCnl7yEy%2B7aVfHVpPzLlwZGB7o3APN7IyXN5zfOr; .Nop.Antiforgery=CfDJ8Lq3qIcO6ytCqFyhqkpa6tqvEyR3NDgGilyW2dD_nNfm9nftyUClgRJcqbFezh8KsAhGvz8TOmGy0Z94NnqqaYsHqeTObWgFRobHLbtuZJoozG9qwc--QeqUGJeLQPjtCvBC0cUk6YCEClQJt-g9f_4; .Nop.Authentication=CfDJ8Lq3qIcO6ytCqFyhqkpa6tq5CaYDw4l2A4h2ARx9I2ik0UJ4bT7XjC_s2VW7czGclG5RtEpviSZ9gV0lrNXwkzHExOXul-_iHrD9nF-PVrQJ4uxERcqDlzLk4UTvYQpoZhaDzc8ArqzzxNRClPyk7zzhSQE39q7FESomGRpMbHK591HjnLabpWmrVlLitsJ4qjHu2L8Ld_COVz2opJGZalnD3ELRCxwxhTk1GOafidC-TnffbrihA1L6Yc8pfPry9vcqErifpffVgzD5WVF1un-OhhZew7E2BS6bn8jf2bIWmXrezkxgfVyH6C22BlT5jcBpCBS-1L7gcQZrD9uHvloRVg5dSx9KuJLkw_rH4ifSvllC_VxCT4w_xBV8MHXlt06Aid69wkjqc_W-j6iSq3fXTlpNSXqK3GilUf_uhDwkHzGlpPWRLw9gaJwkpmTydxqh2FNmmeGKG0s_v_Mlyy-rsz7sbr0N-W12I6l1pjRfQdHZLy6A4ekhnrXMGcll91tqNwu77QN3IQkOMQTGHFM0DwWeq_xjfp9MdJLZh_xUGr8_d-1l3b5tQDwr_-WKUQ; .Nop.RecentlyViewedProducts=25%2C1%2C43; __atuvc=1%7C3%2C59%7C4%2C8%7C5; __atuvs=63d69d566120e8f1000; .Nop.Customer=351afea9-1e55-46b4-b752-9ab5070c6059; .Nop.Culture=c%3Den-US%7Cuic%3Den-US</stringProp>
+                </elementProp>
+                <elementProp name="origin" elementType="Header">
+                  <stringProp name="Header.name">origin</stringProp>
+                  <stringProp name="Header.value">https://demo.nopcommerce.com</stringProp>
+                </elementProp>
+                <elementProp name="pragma" elementType="Header">
+                  <stringProp name="Header.name">pragma</stringProp>
+                  <stringProp name="Header.value">no-cache</stringProp>
+                </elementProp>
+                <elementProp name="referer" elementType="Header">
+                  <stringProp name="Header.name">referer</stringProp>
+                  <stringProp name="Header.value">https://demo.nopcommerce.com/cart</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua</stringProp>
+                  <stringProp name="Header.value">&quot;Not?A_Brand&quot;;v=&quot;8&quot;, &quot;Chromium&quot;;v=&quot;108&quot;, &quot;Microsoft Edge&quot;;v=&quot;108&quot;</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-mobile" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
+                  <stringProp name="Header.value">?0</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-platform" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
+                  <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
+                </elementProp>
+                <elementProp name="sec-fetch-dest" elementType="Header">
+                  <stringProp name="Header.name">sec-fetch-dest</stringProp>
                   <stringProp name="Header.value">document</stringProp>
+                </elementProp>
+                <elementProp name="sec-fetch-mode" elementType="Header">
+                  <stringProp name="Header.name">sec-fetch-mode</stringProp>
+                  <stringProp name="Header.value">navigate</stringProp>
+                </elementProp>
+                <elementProp name="sec-fetch-site" elementType="Header">
+                  <stringProp name="Header.name">sec-fetch-site</stringProp>
+                  <stringProp name="Header.value">same-origin</stringProp>
+                </elementProp>
+                <elementProp name="sec-fetch-user" elementType="Header">
+                  <stringProp name="Header.name">sec-fetch-user</stringProp>
+                  <stringProp name="Header.value">?1</stringProp>
+                </elementProp>
+                <elementProp name="upgrade-insecure-requests" elementType="Header">
+                  <stringProp name="Header.name">upgrade-insecure-requests</stringProp>
+                  <stringProp name="Header.value">1</stringProp>
+                </elementProp>
+                <elementProp name="user-agent" elementType="Header">
+                  <stringProp name="Header.name">user-agent</stringProp>
+                  <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.76</stringProp>
                 </elementProp>
               </collectionProp>
             </HeaderManager>
@@ -1477,12 +1527,317 @@
             </UserParameters>
             <hashTree/>
           </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Checkout" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain"></stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/checkout</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="accept" elementType="Header">
+                  <stringProp name="Header.name">accept</stringProp>
+                  <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9</stringProp>
+                </elementProp>
+                <elementProp name="accept-encoding" elementType="Header">
+                  <stringProp name="Header.name">accept-encoding</stringProp>
+                  <stringProp name="Header.value">gzip, deflate, br</stringProp>
+                </elementProp>
+                <elementProp name="accept-language" elementType="Header">
+                  <stringProp name="Header.name">accept-language</stringProp>
+                  <stringProp name="Header.value">en-US,en;q=0.9</stringProp>
+                </elementProp>
+                <elementProp name="cache-control" elementType="Header">
+                  <stringProp name="Header.name">cache-control</stringProp>
+                  <stringProp name="Header.value">no-cache</stringProp>
+                </elementProp>
+                <elementProp name="cookie" elementType="Header">
+                  <stringProp name="Header.name">cookie</stringProp>
+                  <stringProp name="Header.value">_ga=GA1.2.220370839.1673518291; _gcl_au=1.1.851617932.1673962394; .Nop.Session=CfDJ8Lq3qIcO6ytCqFyhqkpa6tqKknZXwqzTrm6FlIzEIzhgZ25jhDp%2FfkcARFT6L5kV%2FmjfHVqQmaZ%2FsTeq0sZLY92Li6WJJxuD37jIUCO9CENl50EEhms%2BT%2BC9OMB0TgqyN9rOvCnl7yEy%2B7aVfHVpPzLlwZGB7o3APN7IyXN5zfOr; .Nop.Antiforgery=CfDJ8Lq3qIcO6ytCqFyhqkpa6tqvEyR3NDgGilyW2dD_nNfm9nftyUClgRJcqbFezh8KsAhGvz8TOmGy0Z94NnqqaYsHqeTObWgFRobHLbtuZJoozG9qwc--QeqUGJeLQPjtCvBC0cUk6YCEClQJt-g9f_4; .Nop.Authentication=CfDJ8Lq3qIcO6ytCqFyhqkpa6tq5CaYDw4l2A4h2ARx9I2ik0UJ4bT7XjC_s2VW7czGclG5RtEpviSZ9gV0lrNXwkzHExOXul-_iHrD9nF-PVrQJ4uxERcqDlzLk4UTvYQpoZhaDzc8ArqzzxNRClPyk7zzhSQE39q7FESomGRpMbHK591HjnLabpWmrVlLitsJ4qjHu2L8Ld_COVz2opJGZalnD3ELRCxwxhTk1GOafidC-TnffbrihA1L6Yc8pfPry9vcqErifpffVgzD5WVF1un-OhhZew7E2BS6bn8jf2bIWmXrezkxgfVyH6C22BlT5jcBpCBS-1L7gcQZrD9uHvloRVg5dSx9KuJLkw_rH4ifSvllC_VxCT4w_xBV8MHXlt06Aid69wkjqc_W-j6iSq3fXTlpNSXqK3GilUf_uhDwkHzGlpPWRLw9gaJwkpmTydxqh2FNmmeGKG0s_v_Mlyy-rsz7sbr0N-W12I6l1pjRfQdHZLy6A4ekhnrXMGcll91tqNwu77QN3IQkOMQTGHFM0DwWeq_xjfp9MdJLZh_xUGr8_d-1l3b5tQDwr_-WKUQ; .Nop.RecentlyViewedProducts=25%2C1%2C43; __atuvc=1%7C3%2C59%7C4%2C8%7C5; __atuvs=63d69d566120e8f1000; .Nop.Culture=c%3Den-US%7Cuic%3Den-US; .Nop.Customer=351afea9-1e55-46b4-b752-9ab5070c6059</stringProp>
+                </elementProp>
+                <elementProp name="pragma" elementType="Header">
+                  <stringProp name="Header.name">pragma</stringProp>
+                  <stringProp name="Header.value">no-cache</stringProp>
+                </elementProp>
+                <elementProp name="referer" elementType="Header">
+                  <stringProp name="Header.name">referer</stringProp>
+                  <stringProp name="Header.value">https://demo.nopcommerce.com/cart</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua</stringProp>
+                  <stringProp name="Header.value">&quot;Not?A_Brand&quot;;v=&quot;8&quot;, &quot;Chromium&quot;;v=&quot;108&quot;, &quot;Microsoft Edge&quot;;v=&quot;108&quot;</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-mobile" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
+                  <stringProp name="Header.value">?0</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-platform" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
+                  <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
+                </elementProp>
+                <elementProp name="sec-fetch-dest" elementType="Header">
+                  <stringProp name="Header.name">sec-fetch-dest</stringProp>
+                  <stringProp name="Header.value">document</stringProp>
+                </elementProp>
+                <elementProp name="sec-fetch-mode" elementType="Header">
+                  <stringProp name="Header.name">sec-fetch-mode</stringProp>
+                  <stringProp name="Header.value">navigate</stringProp>
+                </elementProp>
+                <elementProp name="sec-fetch-site" elementType="Header">
+                  <stringProp name="Header.name">sec-fetch-site</stringProp>
+                  <stringProp name="Header.value">same-origin</stringProp>
+                </elementProp>
+                <elementProp name="sec-fetch-user" elementType="Header">
+                  <stringProp name="Header.name">sec-fetch-user</stringProp>
+                  <stringProp name="Header.value">?1</stringProp>
+                </elementProp>
+                <elementProp name="upgrade-insecure-requests" elementType="Header">
+                  <stringProp name="Header.name">upgrade-insecure-requests</stringProp>
+                  <stringProp name="Header.value">1</stringProp>
+                </elementProp>
+                <elementProp name="user-agent" elementType="Header">
+                  <stringProp name="Header.name">user-agent</stringProp>
+                  <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.76</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Checkout- redirect" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain"></stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/onepagecheckout</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="accept" elementType="Header">
+                  <stringProp name="Header.name">accept</stringProp>
+                  <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9</stringProp>
+                </elementProp>
+                <elementProp name="accept-encoding" elementType="Header">
+                  <stringProp name="Header.name">accept-encoding</stringProp>
+                  <stringProp name="Header.value">gzip, deflate, br</stringProp>
+                </elementProp>
+                <elementProp name="accept-language" elementType="Header">
+                  <stringProp name="Header.name">accept-language</stringProp>
+                  <stringProp name="Header.value">en-US,en;q=0.9</stringProp>
+                </elementProp>
+                <elementProp name="cache-control" elementType="Header">
+                  <stringProp name="Header.name">cache-control</stringProp>
+                  <stringProp name="Header.value">no-cache</stringProp>
+                </elementProp>
+                <elementProp name="cookie" elementType="Header">
+                  <stringProp name="Header.name">cookie</stringProp>
+                  <stringProp name="Header.value">_ga=GA1.2.220370839.1673518291; _gcl_au=1.1.851617932.1673962394; .Nop.Session=CfDJ8Lq3qIcO6ytCqFyhqkpa6tqKknZXwqzTrm6FlIzEIzhgZ25jhDp%2FfkcARFT6L5kV%2FmjfHVqQmaZ%2FsTeq0sZLY92Li6WJJxuD37jIUCO9CENl50EEhms%2BT%2BC9OMB0TgqyN9rOvCnl7yEy%2B7aVfHVpPzLlwZGB7o3APN7IyXN5zfOr; .Nop.Antiforgery=CfDJ8Lq3qIcO6ytCqFyhqkpa6tqvEyR3NDgGilyW2dD_nNfm9nftyUClgRJcqbFezh8KsAhGvz8TOmGy0Z94NnqqaYsHqeTObWgFRobHLbtuZJoozG9qwc--QeqUGJeLQPjtCvBC0cUk6YCEClQJt-g9f_4; .Nop.Authentication=CfDJ8Lq3qIcO6ytCqFyhqkpa6tq5CaYDw4l2A4h2ARx9I2ik0UJ4bT7XjC_s2VW7czGclG5RtEpviSZ9gV0lrNXwkzHExOXul-_iHrD9nF-PVrQJ4uxERcqDlzLk4UTvYQpoZhaDzc8ArqzzxNRClPyk7zzhSQE39q7FESomGRpMbHK591HjnLabpWmrVlLitsJ4qjHu2L8Ld_COVz2opJGZalnD3ELRCxwxhTk1GOafidC-TnffbrihA1L6Yc8pfPry9vcqErifpffVgzD5WVF1un-OhhZew7E2BS6bn8jf2bIWmXrezkxgfVyH6C22BlT5jcBpCBS-1L7gcQZrD9uHvloRVg5dSx9KuJLkw_rH4ifSvllC_VxCT4w_xBV8MHXlt06Aid69wkjqc_W-j6iSq3fXTlpNSXqK3GilUf_uhDwkHzGlpPWRLw9gaJwkpmTydxqh2FNmmeGKG0s_v_Mlyy-rsz7sbr0N-W12I6l1pjRfQdHZLy6A4ekhnrXMGcll91tqNwu77QN3IQkOMQTGHFM0DwWeq_xjfp9MdJLZh_xUGr8_d-1l3b5tQDwr_-WKUQ; .Nop.RecentlyViewedProducts=25%2C1%2C43; __atuvc=1%7C3%2C59%7C4%2C8%7C5; __atuvs=63d69d566120e8f1000; .Nop.Culture=c%3Den-US%7Cuic%3Den-US; .Nop.Customer=351afea9-1e55-46b4-b752-9ab5070c6059</stringProp>
+                </elementProp>
+                <elementProp name="pragma" elementType="Header">
+                  <stringProp name="Header.name">pragma</stringProp>
+                  <stringProp name="Header.value">no-cache</stringProp>
+                </elementProp>
+                <elementProp name="referer" elementType="Header">
+                  <stringProp name="Header.name">referer</stringProp>
+                  <stringProp name="Header.value">https://demo.nopcommerce.com/cart</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua</stringProp>
+                  <stringProp name="Header.value">&quot;Not?A_Brand&quot;;v=&quot;8&quot;, &quot;Chromium&quot;;v=&quot;108&quot;, &quot;Microsoft Edge&quot;;v=&quot;108&quot;</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-mobile" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
+                  <stringProp name="Header.value">?0</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-platform" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
+                  <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
+                </elementProp>
+                <elementProp name="sec-fetch-dest" elementType="Header">
+                  <stringProp name="Header.name">sec-fetch-dest</stringProp>
+                  <stringProp name="Header.value">document</stringProp>
+                </elementProp>
+                <elementProp name="sec-fetch-mode" elementType="Header">
+                  <stringProp name="Header.name">sec-fetch-mode</stringProp>
+                  <stringProp name="Header.value">navigate</stringProp>
+                </elementProp>
+                <elementProp name="sec-fetch-site" elementType="Header">
+                  <stringProp name="Header.name">sec-fetch-site</stringProp>
+                  <stringProp name="Header.value">same-origin</stringProp>
+                </elementProp>
+                <elementProp name="sec-fetch-user" elementType="Header">
+                  <stringProp name="Header.name">sec-fetch-user</stringProp>
+                  <stringProp name="Header.value">?1</stringProp>
+                </elementProp>
+                <elementProp name="upgrade-insecure-requests" elementType="Header">
+                  <stringProp name="Header.name">upgrade-insecure-requests</stringProp>
+                  <stringProp name="Header.value">1</stringProp>
+                </elementProp>
+                <elementProp name="user-agent" elementType="Header">
+                  <stringProp name="Header.name">user-agent</stringProp>
+                  <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.76</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="-1703345134">nopCommerce demo store. Checkout</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
         </hashTree>
         <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Checkout user- Save billing" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
           <boolProp name="TransactionController.parent">true</boolProp>
         </TransactionController>
         <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Checkout user" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="countryId" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                  <stringProp name="Argument.value">${CountryId}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">countryId</stringProp>
+                </elementProp>
+                <elementProp name="addSelectStateItem" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">true</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">addSelectStateItem</stringProp>
+                </elementProp>
+                <elementProp name="_" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">1675009954827</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">_</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain"></stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/country/getstatesbycountryid?countryId=${CountryId}&amp;addSelectStateItem=true&amp;_=1675009954827</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="accept" elementType="Header">
+                  <stringProp name="Header.name">accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+                <elementProp name="accept-encoding" elementType="Header">
+                  <stringProp name="Header.name">accept-encoding</stringProp>
+                  <stringProp name="Header.value">gzip, deflate, br</stringProp>
+                </elementProp>
+                <elementProp name="accept-language" elementType="Header">
+                  <stringProp name="Header.name">accept-language</stringProp>
+                  <stringProp name="Header.value">en-US,en;q=0.9</stringProp>
+                </elementProp>
+                <elementProp name="cache-control" elementType="Header">
+                  <stringProp name="Header.name">cache-control</stringProp>
+                  <stringProp name="Header.value">no-cache</stringProp>
+                </elementProp>
+                <elementProp name="cookie" elementType="Header">
+                  <stringProp name="Header.name">cookie</stringProp>
+                  <stringProp name="Header.value">_ga=GA1.2.220370839.1673518291; _gcl_au=1.1.851617932.1673962394; .Nop.Session=CfDJ8Lq3qIcO6ytCqFyhqkpa6tqKknZXwqzTrm6FlIzEIzhgZ25jhDp%2FfkcARFT6L5kV%2FmjfHVqQmaZ%2FsTeq0sZLY92Li6WJJxuD37jIUCO9CENl50EEhms%2BT%2BC9OMB0TgqyN9rOvCnl7yEy%2B7aVfHVpPzLlwZGB7o3APN7IyXN5zfOr; .Nop.Antiforgery=CfDJ8Lq3qIcO6ytCqFyhqkpa6tqvEyR3NDgGilyW2dD_nNfm9nftyUClgRJcqbFezh8KsAhGvz8TOmGy0Z94NnqqaYsHqeTObWgFRobHLbtuZJoozG9qwc--QeqUGJeLQPjtCvBC0cUk6YCEClQJt-g9f_4; .Nop.Authentication=CfDJ8Lq3qIcO6ytCqFyhqkpa6tq5CaYDw4l2A4h2ARx9I2ik0UJ4bT7XjC_s2VW7czGclG5RtEpviSZ9gV0lrNXwkzHExOXul-_iHrD9nF-PVrQJ4uxERcqDlzLk4UTvYQpoZhaDzc8ArqzzxNRClPyk7zzhSQE39q7FESomGRpMbHK591HjnLabpWmrVlLitsJ4qjHu2L8Ld_COVz2opJGZalnD3ELRCxwxhTk1GOafidC-TnffbrihA1L6Yc8pfPry9vcqErifpffVgzD5WVF1un-OhhZew7E2BS6bn8jf2bIWmXrezkxgfVyH6C22BlT5jcBpCBS-1L7gcQZrD9uHvloRVg5dSx9KuJLkw_rH4ifSvllC_VxCT4w_xBV8MHXlt06Aid69wkjqc_W-j6iSq3fXTlpNSXqK3GilUf_uhDwkHzGlpPWRLw9gaJwkpmTydxqh2FNmmeGKG0s_v_Mlyy-rsz7sbr0N-W12I6l1pjRfQdHZLy6A4ekhnrXMGcll91tqNwu77QN3IQkOMQTGHFM0DwWeq_xjfp9MdJLZh_xUGr8_d-1l3b5tQDwr_-WKUQ; .Nop.RecentlyViewedProducts=25%2C1%2C43; __atuvc=1%7C3%2C59%7C4%2C8%7C5; __atuvs=63d69d566120e8f1000; .Nop.Customer=351afea9-1e55-46b4-b752-9ab5070c6059; .Nop.Culture=c%3Den-US%7Cuic%3Den-US</stringProp>
+                </elementProp>
+                <elementProp name="pragma" elementType="Header">
+                  <stringProp name="Header.name">pragma</stringProp>
+                  <stringProp name="Header.value">no-cache</stringProp>
+                </elementProp>
+                <elementProp name="referer" elementType="Header">
+                  <stringProp name="Header.name">referer</stringProp>
+                  <stringProp name="Header.value">https://demo.nopcommerce.com/onepagecheckout</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua</stringProp>
+                  <stringProp name="Header.value">&quot;Not?A_Brand&quot;;v=&quot;8&quot;, &quot;Chromium&quot;;v=&quot;108&quot;, &quot;Microsoft Edge&quot;;v=&quot;108&quot;</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-mobile" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
+                  <stringProp name="Header.value">?0</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-platform" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
+                  <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
+                </elementProp>
+                <elementProp name="sec-fetch-dest" elementType="Header">
+                  <stringProp name="Header.name">sec-fetch-dest</stringProp>
+                  <stringProp name="Header.value">empty</stringProp>
+                </elementProp>
+                <elementProp name="sec-fetch-mode" elementType="Header">
+                  <stringProp name="Header.name">sec-fetch-mode</stringProp>
+                  <stringProp name="Header.value">cors</stringProp>
+                </elementProp>
+                <elementProp name="sec-fetch-site" elementType="Header">
+                  <stringProp name="Header.name">sec-fetch-site</stringProp>
+                  <stringProp name="Header.value">same-origin</stringProp>
+                </elementProp>
+                <elementProp name="user-agent" elementType="Header">
+                  <stringProp name="Header.name">user-agent</stringProp>
+                  <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.76</stringProp>
+                </elementProp>
+                <elementProp name="x-requested-with" elementType="Header">
+                  <stringProp name="Header.name">x-requested-with</stringProp>
+                  <stringProp name="Header.value">XMLHttpRequest</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="XPath Extractor- BillingNewAddress_Id" enabled="true">
+              <stringProp name="XPathExtractor.default">Not Found</stringProp>
+              <stringProp name="XPathExtractor.refname">BillingNewAddress_Id</stringProp>
+              <stringProp name="XPathExtractor.matchNumber">0</stringProp>
+              <stringProp name="XPathExtractor.xpathQuery">//select[@id=&apos;CountryId&apos;]/option/@value</stringProp>
+              <boolProp name="XPathExtractor.validate">false</boolProp>
+              <boolProp name="XPathExtractor.tolerant">true</boolProp>
+              <boolProp name="XPathExtractor.namespace">false</boolProp>
+            </XPathExtractor>
+            <hashTree/>
+          </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Checkout user" enabled="true">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments">
@@ -1503,14 +1858,14 @@
                 <elementProp name="BillingNewAddress.FirstName" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">BillingNewAddress.FirstName</stringProp>
-                  <stringProp name="Argument.value">${BillingNewAddress.FirstName}</stringProp>
+                  <stringProp name="Argument.value">${FirstName}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="BillingNewAddress.LastName" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">BillingNewAddress.LastName</stringProp>
-                  <stringProp name="Argument.value">${BillingNewAddress.LastName}</stringProp>
+                  <stringProp name="Argument.value">${LastName}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
@@ -1617,56 +1972,83 @@
           <hashTree>
             <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
               <collectionProp name="HeaderManager.headers">
-                <elementProp name="Sec-Fetch-Mode" elementType="Header">
-                  <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
-                  <stringProp name="Header.value">cors</stringProp>
-                </elementProp>
-                <elementProp name="Referer" elementType="Header">
-                  <stringProp name="Header.name">Referer</stringProp>
-                  <stringProp name="Header.value">${scheme}://${host}/onepagecheckout</stringProp>
-                </elementProp>
-                <elementProp name="Sec-Fetch-Site" elementType="Header">
-                  <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
-                  <stringProp name="Header.value">same-origin</stringProp>
-                </elementProp>
-                <elementProp name="Accept-Language" elementType="Header">
-                  <stringProp name="Header.name">Accept-Language</stringProp>
-                  <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
-                </elementProp>
-                <elementProp name="Origin" elementType="Header">
-                  <stringProp name="Header.name">Origin</stringProp>
-                  <stringProp name="Header.value">${scheme}://${host}</stringProp>
-                </elementProp>
-                <elementProp name="Accept" elementType="Header">
-                  <stringProp name="Header.name">Accept</stringProp>
+                <elementProp name="accept" elementType="Header">
+                  <stringProp name="Header.name">accept</stringProp>
                   <stringProp name="Header.value">*/*</stringProp>
                 </elementProp>
-                <elementProp name="X-Requested-With" elementType="Header">
-                  <stringProp name="Header.name">X-Requested-With</stringProp>
-                  <stringProp name="Header.value">XMLHttpRequest</stringProp>
-                </elementProp>
-                <elementProp name="Content-Type" elementType="Header">
-                  <stringProp name="Header.name">Content-Type</stringProp>
-                  <stringProp name="Header.value">application/x-www-form-urlencoded; charset=UTF-8</stringProp>
-                </elementProp>
-                <elementProp name="Accept-Encoding" elementType="Header">
-                  <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <elementProp name="accept-encoding" elementType="Header">
+                  <stringProp name="Header.name">accept-encoding</stringProp>
                   <stringProp name="Header.value">gzip, deflate, br</stringProp>
                 </elementProp>
-                <elementProp name="User-Agent" elementType="Header">
-                  <stringProp name="Header.name">User-Agent</stringProp>
-                  <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/109.0</stringProp>
+                <elementProp name="accept-language" elementType="Header">
+                  <stringProp name="Header.name">accept-language</stringProp>
+                  <stringProp name="Header.value">en-US,en;q=0.9</stringProp>
                 </elementProp>
-                <elementProp name="Sec-Fetch-Dest" elementType="Header">
-                  <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
+                <elementProp name="cache-control" elementType="Header">
+                  <stringProp name="Header.name">cache-control</stringProp>
+                  <stringProp name="Header.value">no-cache</stringProp>
+                </elementProp>
+                <elementProp name="content-length" elementType="Header">
+                  <stringProp name="Header.name">content-length</stringProp>
+                  <stringProp name="Header.value">727</stringProp>
+                </elementProp>
+                <elementProp name="content-type" elementType="Header">
+                  <stringProp name="Header.name">content-type</stringProp>
+                  <stringProp name="Header.value">application/x-www-form-urlencoded; charset=UTF-8</stringProp>
+                </elementProp>
+                <elementProp name="cookie" elementType="Header">
+                  <stringProp name="Header.name">cookie</stringProp>
+                  <stringProp name="Header.value">_ga=GA1.2.220370839.1673518291; _gcl_au=1.1.851617932.1673962394; .Nop.Session=CfDJ8Lq3qIcO6ytCqFyhqkpa6tqKknZXwqzTrm6FlIzEIzhgZ25jhDp%2FfkcARFT6L5kV%2FmjfHVqQmaZ%2FsTeq0sZLY92Li6WJJxuD37jIUCO9CENl50EEhms%2BT%2BC9OMB0TgqyN9rOvCnl7yEy%2B7aVfHVpPzLlwZGB7o3APN7IyXN5zfOr; .Nop.Antiforgery=CfDJ8Lq3qIcO6ytCqFyhqkpa6tqvEyR3NDgGilyW2dD_nNfm9nftyUClgRJcqbFezh8KsAhGvz8TOmGy0Z94NnqqaYsHqeTObWgFRobHLbtuZJoozG9qwc--QeqUGJeLQPjtCvBC0cUk6YCEClQJt-g9f_4; .Nop.Authentication=CfDJ8Lq3qIcO6ytCqFyhqkpa6tq5CaYDw4l2A4h2ARx9I2ik0UJ4bT7XjC_s2VW7czGclG5RtEpviSZ9gV0lrNXwkzHExOXul-_iHrD9nF-PVrQJ4uxERcqDlzLk4UTvYQpoZhaDzc8ArqzzxNRClPyk7zzhSQE39q7FESomGRpMbHK591HjnLabpWmrVlLitsJ4qjHu2L8Ld_COVz2opJGZalnD3ELRCxwxhTk1GOafidC-TnffbrihA1L6Yc8pfPry9vcqErifpffVgzD5WVF1un-OhhZew7E2BS6bn8jf2bIWmXrezkxgfVyH6C22BlT5jcBpCBS-1L7gcQZrD9uHvloRVg5dSx9KuJLkw_rH4ifSvllC_VxCT4w_xBV8MHXlt06Aid69wkjqc_W-j6iSq3fXTlpNSXqK3GilUf_uhDwkHzGlpPWRLw9gaJwkpmTydxqh2FNmmeGKG0s_v_Mlyy-rsz7sbr0N-W12I6l1pjRfQdHZLy6A4ekhnrXMGcll91tqNwu77QN3IQkOMQTGHFM0DwWeq_xjfp9MdJLZh_xUGr8_d-1l3b5tQDwr_-WKUQ; .Nop.RecentlyViewedProducts=25%2C1%2C43; __atuvc=1%7C3%2C59%7C4%2C8%7C5; __atuvs=63d69d566120e8f1000; .Nop.Customer=351afea9-1e55-46b4-b752-9ab5070c6059; .Nop.Culture=c%3Den-US%7Cuic%3Den-US</stringProp>
+                </elementProp>
+                <elementProp name="origin" elementType="Header">
+                  <stringProp name="Header.name">origin</stringProp>
+                  <stringProp name="Header.value">https://demo.nopcommerce.com</stringProp>
+                </elementProp>
+                <elementProp name="pragma" elementType="Header">
+                  <stringProp name="Header.name">pragma</stringProp>
+                  <stringProp name="Header.value">no-cache</stringProp>
+                </elementProp>
+                <elementProp name="referer" elementType="Header">
+                  <stringProp name="Header.name">referer</stringProp>
+                  <stringProp name="Header.value">https://demo.nopcommerce.com/onepagecheckout</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua</stringProp>
+                  <stringProp name="Header.value">&quot;Not?A_Brand&quot;;v=&quot;8&quot;, &quot;Chromium&quot;;v=&quot;108&quot;, &quot;Microsoft Edge&quot;;v=&quot;108&quot;</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-mobile" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
+                  <stringProp name="Header.value">?0</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-platform" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
+                  <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
+                </elementProp>
+                <elementProp name="sec-fetch-dest" elementType="Header">
+                  <stringProp name="Header.name">sec-fetch-dest</stringProp>
                   <stringProp name="Header.value">empty</stringProp>
+                </elementProp>
+                <elementProp name="sec-fetch-mode" elementType="Header">
+                  <stringProp name="Header.name">sec-fetch-mode</stringProp>
+                  <stringProp name="Header.value">cors</stringProp>
+                </elementProp>
+                <elementProp name="sec-fetch-site" elementType="Header">
+                  <stringProp name="Header.name">sec-fetch-site</stringProp>
+                  <stringProp name="Header.value">same-origin</stringProp>
+                </elementProp>
+                <elementProp name="user-agent" elementType="Header">
+                  <stringProp name="Header.name">user-agent</stringProp>
+                  <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.76</stringProp>
+                </elementProp>
+                <elementProp name="x-requested-with" elementType="Header">
+                  <stringProp name="Header.name">x-requested-with</stringProp>
+                  <stringProp name="Header.value">XMLHttpRequest</stringProp>
                 </elementProp>
               </collectionProp>
             </HeaderManager>
             <hashTree/>
             <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="User Parameters" enabled="true">
               <collectionProp name="UserParameters.names">
-                <stringProp name="-1153811317">BillingNewAddress_Id</stringProp>
                 <stringProp name="-2106090402">BillingNewAddress.Company</stringProp>
                 <stringProp name="-756536022">BillingNewAddress.City</stringProp>
                 <stringProp name="-1483243780">BillingNewAddress.Address1</stringProp>
@@ -1677,26 +2059,25 @@
                 <stringProp name="-1724128640">BillingNewAddress.LastName</stringProp>
               </collectionProp>
               <collectionProp name="UserParameters.thread_values">
-                <collectionProp name="-1674006933">
-                  <stringProp name="48">0</stringProp>
-                  <stringProp name="1597111310">${__RandomString(8,ABCDEFGHIJKLMNOPQRSTUVWXYZ)} </stringProp>
-                  <stringProp name="1597111310">${__RandomString(8,ABCDEFGHIJKLMNOPQRSTUVWXYZ)} </stringProp>
-                  <stringProp name="-998144685">${__RandomString(8,ABCDEFGHIJK12345678)} </stringProp>
-                  <stringProp name="-998144685">${__RandomString(8,ABCDEFGHIJK12345678)} </stringProp>
-                  <stringProp name="720373655">${__RandomString(8,12345678)} </stringProp>
-                  <stringProp name="720373655">${__RandomString(8,12345678)} </stringProp>
-                  <stringProp name="-76408659">${__RandomString(8,fvdxgfgfzxcvn} </stringProp>
-                  <stringProp name="1391519672">${__RandomString(8,ABCDEFGHIJK} </stringProp>
+                <collectionProp name="-1145686167">
+                  <stringProp name="-2029145378">${__RandomString(8,ABCDEFGHIJKLMNOPQRSTUVWXYZ,)} </stringProp>
+                  <stringProp name="-2029145378">${__RandomString(8,ABCDEFGHIJKLMNOPQRSTUVWXYZ,)} </stringProp>
+                  <stringProp name="-877702599">${__RandomString(8,ABCDEFGHIJK12345678,)} </stringProp>
+                  <stringProp name="-877621875">${__RandomString(8,ABCDEFGHIJK12345678,}} </stringProp>
+                  <stringProp name="856758389">${__RandomString(8,12345678,)} </stringProp>
+                  <stringProp name="856758389">${__RandomString(8,12345678,)} </stringProp>
+                  <stringProp name="1926224034">${__RandomString(8,fvdxgfgfzxcvn,}}</stringProp>
+                  <stringProp name="187362039">${__RandomString(8,ABCDEFGHIJK,}}</stringProp>
                 </collectionProp>
               </collectionProp>
               <boolProp name="UserParameters.per_iteration">false</boolProp>
             </UserParameters>
             <hashTree/>
-            <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="XPath Extractor-Shippingoption" enabled="true">
+            <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="XPath Extractor-Shippingoption" enabled="false">
               <stringProp name="XPathExtractor.default">Not Found</stringProp>
               <stringProp name="XPathExtractor.refname">Shippingoption</stringProp>
-              <stringProp name="XPathExtractor.matchNumber">1</stringProp>
-              <stringProp name="XPathExtractor.xpathQuery">//div[@id=&apos;checkout-step-shipping-method&apos;]//input/@value</stringProp>
+              <stringProp name="XPathExtractor.matchNumber">0</stringProp>
+              <stringProp name="XPathExtractor.xpathQuery">//input[@name=&apos;shippingoption&apos;]/@value</stringProp>
               <boolProp name="XPathExtractor.validate">false</boolProp>
               <boolProp name="XPathExtractor.tolerant">true</boolProp>
               <boolProp name="XPathExtractor.namespace">false</boolProp>
@@ -1715,7 +2096,7 @@
                 <elementProp name="shippingoption" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">shippingoption</stringProp>
-                  <stringProp name="Argument.value">${Shippingoption]</stringProp>
+                  <stringProp name="Argument.value">${Shippingoption}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
@@ -1745,54 +2126,82 @@
           <hashTree>
             <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
               <collectionProp name="HeaderManager.headers">
-                <elementProp name="Sec-Fetch-Mode" elementType="Header">
-                  <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
-                  <stringProp name="Header.value">cors</stringProp>
-                </elementProp>
-                <elementProp name="Referer" elementType="Header">
-                  <stringProp name="Header.name">Referer</stringProp>
-                  <stringProp name="Header.value">${scheme}://${host}/onepagecheckout</stringProp>
-                </elementProp>
-                <elementProp name="Sec-Fetch-Site" elementType="Header">
-                  <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
-                  <stringProp name="Header.value">same-origin</stringProp>
-                </elementProp>
-                <elementProp name="Accept-Language" elementType="Header">
-                  <stringProp name="Header.name">Accept-Language</stringProp>
-                  <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
-                </elementProp>
-                <elementProp name="Origin" elementType="Header">
-                  <stringProp name="Header.name">Origin</stringProp>
-                  <stringProp name="Header.value">${scheme}://${host}</stringProp>
-                </elementProp>
-                <elementProp name="Accept" elementType="Header">
-                  <stringProp name="Header.name">Accept</stringProp>
+                <elementProp name="accept" elementType="Header">
+                  <stringProp name="Header.name">accept</stringProp>
                   <stringProp name="Header.value">*/*</stringProp>
                 </elementProp>
-                <elementProp name="X-Requested-With" elementType="Header">
-                  <stringProp name="Header.name">X-Requested-With</stringProp>
-                  <stringProp name="Header.value">XMLHttpRequest</stringProp>
-                </elementProp>
-                <elementProp name="Content-Type" elementType="Header">
-                  <stringProp name="Header.name">Content-Type</stringProp>
-                  <stringProp name="Header.value">application/x-www-form-urlencoded; charset=UTF-8</stringProp>
-                </elementProp>
-                <elementProp name="Accept-Encoding" elementType="Header">
-                  <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <elementProp name="accept-encoding" elementType="Header">
+                  <stringProp name="Header.name">accept-encoding</stringProp>
                   <stringProp name="Header.value">gzip, deflate, br</stringProp>
                 </elementProp>
-                <elementProp name="User-Agent" elementType="Header">
-                  <stringProp name="Header.name">User-Agent</stringProp>
-                  <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/109.0</stringProp>
+                <elementProp name="accept-language" elementType="Header">
+                  <stringProp name="Header.name">accept-language</stringProp>
+                  <stringProp name="Header.value">en-US,en;q=0.9</stringProp>
                 </elementProp>
-                <elementProp name="Sec-Fetch-Dest" elementType="Header">
-                  <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
+                <elementProp name="cache-control" elementType="Header">
+                  <stringProp name="Header.name">cache-control</stringProp>
+                  <stringProp name="Header.value">no-cache</stringProp>
+                </elementProp>
+                <elementProp name="content-length" elementType="Header">
+                  <stringProp name="Header.name">content-length</stringProp>
+                  <stringProp name="Header.value">279</stringProp>
+                </elementProp>
+                <elementProp name="content-type" elementType="Header">
+                  <stringProp name="Header.name">content-type</stringProp>
+                  <stringProp name="Header.value">application/x-www-form-urlencoded; charset=UTF-8</stringProp>
+                </elementProp>
+                <elementProp name="cookie" elementType="Header">
+                  <stringProp name="Header.name">cookie</stringProp>
+                  <stringProp name="Header.value">_ga=GA1.2.220370839.1673518291; _gcl_au=1.1.851617932.1673962394; .Nop.Session=CfDJ8Lq3qIcO6ytCqFyhqkpa6tqKknZXwqzTrm6FlIzEIzhgZ25jhDp%2FfkcARFT6L5kV%2FmjfHVqQmaZ%2FsTeq0sZLY92Li6WJJxuD37jIUCO9CENl50EEhms%2BT%2BC9OMB0TgqyN9rOvCnl7yEy%2B7aVfHVpPzLlwZGB7o3APN7IyXN5zfOr; .Nop.Antiforgery=CfDJ8Lq3qIcO6ytCqFyhqkpa6tqvEyR3NDgGilyW2dD_nNfm9nftyUClgRJcqbFezh8KsAhGvz8TOmGy0Z94NnqqaYsHqeTObWgFRobHLbtuZJoozG9qwc--QeqUGJeLQPjtCvBC0cUk6YCEClQJt-g9f_4; .Nop.Authentication=CfDJ8Lq3qIcO6ytCqFyhqkpa6trgkJKt1rHkXRrGJ2STUFZogQ-4Q7dC76neh3DoQVgN_PF4QoLKtDmKCHqiH6XMh7mUbBgQv_rT0NqbMPv8hh81skb48DS9UzczeFs1ZL5h5Yd4Y3OkZ_bM7LhVwmtFl4bT2HVUgY7_rr-1JvFliyfQILA2MU0W4HccAR9AT3x835V0tpZy4MLLXr5j6VT3GzmjhISaNdSDi_qel3Sqn_iVM-rN-_FgDFxP_pcxOHGe9pkSktWwRn0lQdcqdErFEWZKC8QQJ5irX1UOlpGSmr9xRQJmq75oXR_Sluqzl4aWqvxCloXVXlbP98NYaFvUQTamR7Tpn2JCWVYMrcGdaRlsNlJ0_tDbT5vbgh8_Dxw27tZ5z98Le7R7IyOhGq3HKSOFvyMouGvCbovus48zIVCTrtWfeYcL2nb_DccC0aewKBRSYDdziaM91Qgduxm5GzqfJIyraHxt55hOli_oScqdvcpX0dpAZG2lMIjtOfJJHHdFtWys4nLDQzX5SvNeamwFUrHjjtow5gfFiDl9gBHCAoZnjXNWXRvwWEIWDd64OSh-HFT79K0HY-pHcdIRrfs; .Nop.RecentlyViewedProducts=25%2C1%2C43; __atuvc=1%7C3%2C59%7C4%2C9%7C5; __atuvs=63d69d566120e8f1001; .Nop.Customer=918d5d36-d979-4789-937a-589bfde64824; .Nop.Culture=c%3Den-US%7Cuic%3Den-US</stringProp>
+                </elementProp>
+                <elementProp name="origin" elementType="Header">
+                  <stringProp name="Header.name">origin</stringProp>
+                  <stringProp name="Header.value">https://demo.nopcommerce.com</stringProp>
+                </elementProp>
+                <elementProp name="pragma" elementType="Header">
+                  <stringProp name="Header.name">pragma</stringProp>
+                  <stringProp name="Header.value">no-cache</stringProp>
+                </elementProp>
+                <elementProp name="referer" elementType="Header">
+                  <stringProp name="Header.name">referer</stringProp>
+                  <stringProp name="Header.value">https://demo.nopcommerce.com/onepagecheckout</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua</stringProp>
+                  <stringProp name="Header.value">&quot;Not?A_Brand&quot;;v=&quot;8&quot;, &quot;Chromium&quot;;v=&quot;108&quot;, &quot;Microsoft Edge&quot;;v=&quot;108&quot;</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-mobile" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
+                  <stringProp name="Header.value">?0</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-platform" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
+                  <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
+                </elementProp>
+                <elementProp name="sec-fetch-dest" elementType="Header">
+                  <stringProp name="Header.name">sec-fetch-dest</stringProp>
                   <stringProp name="Header.value">empty</stringProp>
+                </elementProp>
+                <elementProp name="sec-fetch-mode" elementType="Header">
+                  <stringProp name="Header.name">sec-fetch-mode</stringProp>
+                  <stringProp name="Header.value">cors</stringProp>
+                </elementProp>
+                <elementProp name="sec-fetch-site" elementType="Header">
+                  <stringProp name="Header.name">sec-fetch-site</stringProp>
+                  <stringProp name="Header.value">same-origin</stringProp>
+                </elementProp>
+                <elementProp name="user-agent" elementType="Header">
+                  <stringProp name="Header.name">user-agent</stringProp>
+                  <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.76</stringProp>
+                </elementProp>
+                <elementProp name="x-requested-with" elementType="Header">
+                  <stringProp name="Header.name">x-requested-with</stringProp>
+                  <stringProp name="Header.value">XMLHttpRequest</stringProp>
                 </elementProp>
               </collectionProp>
             </HeaderManager>
             <hashTree/>
-            <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="XPath Extractor-PaymentMethod" enabled="true">
+            <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="XPath Extractor-PaymentMethod" enabled="false">
               <stringProp name="XPathExtractor.default">Not Found</stringProp>
               <stringProp name="XPathExtractor.refname">PaymentMethod</stringProp>
               <stringProp name="XPathExtractor.matchNumber">1</stringProp>
@@ -1801,6 +2210,18 @@
               <boolProp name="XPathExtractor.tolerant">true</boolProp>
               <boolProp name="XPathExtractor.namespace">false</boolProp>
             </XPathExtractor>
+            <hashTree/>
+            <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="User Parameters" enabled="true">
+              <collectionProp name="UserParameters.names">
+                <stringProp name="-881936445">Shippingoption</stringProp>
+              </collectionProp>
+              <collectionProp name="UserParameters.thread_values">
+                <collectionProp name="1593966914">
+                  <stringProp name="172865586">Ground___Shipping.FixedByWeightByTotal</stringProp>
+                </collectionProp>
+              </collectionProp>
+              <boolProp name="UserParameters.per_iteration">false</boolProp>
+            </UserParameters>
             <hashTree/>
           </hashTree>
         </hashTree>
@@ -1845,52 +2266,92 @@
           <hashTree>
             <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
               <collectionProp name="HeaderManager.headers">
-                <elementProp name="Sec-Fetch-Mode" elementType="Header">
-                  <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
-                  <stringProp name="Header.value">cors</stringProp>
-                </elementProp>
-                <elementProp name="Referer" elementType="Header">
-                  <stringProp name="Header.name">Referer</stringProp>
-                  <stringProp name="Header.value">${scheme}://${host}/onepagecheckout</stringProp>
-                </elementProp>
-                <elementProp name="Sec-Fetch-Site" elementType="Header">
-                  <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
-                  <stringProp name="Header.value">same-origin</stringProp>
-                </elementProp>
-                <elementProp name="Accept-Language" elementType="Header">
-                  <stringProp name="Header.name">Accept-Language</stringProp>
-                  <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
-                </elementProp>
-                <elementProp name="Origin" elementType="Header">
-                  <stringProp name="Header.name">Origin</stringProp>
-                  <stringProp name="Header.value">${scheme}://${host}</stringProp>
-                </elementProp>
-                <elementProp name="Accept" elementType="Header">
-                  <stringProp name="Header.name">Accept</stringProp>
+                <elementProp name="accept" elementType="Header">
+                  <stringProp name="Header.name">accept</stringProp>
                   <stringProp name="Header.value">*/*</stringProp>
                 </elementProp>
-                <elementProp name="X-Requested-With" elementType="Header">
-                  <stringProp name="Header.name">X-Requested-With</stringProp>
-                  <stringProp name="Header.value">XMLHttpRequest</stringProp>
-                </elementProp>
-                <elementProp name="Content-Type" elementType="Header">
-                  <stringProp name="Header.name">Content-Type</stringProp>
-                  <stringProp name="Header.value">application/x-www-form-urlencoded; charset=UTF-8</stringProp>
-                </elementProp>
-                <elementProp name="Accept-Encoding" elementType="Header">
-                  <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <elementProp name="accept-encoding" elementType="Header">
+                  <stringProp name="Header.name">accept-encoding</stringProp>
                   <stringProp name="Header.value">gzip, deflate, br</stringProp>
                 </elementProp>
-                <elementProp name="User-Agent" elementType="Header">
-                  <stringProp name="Header.name">User-Agent</stringProp>
-                  <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/109.0</stringProp>
+                <elementProp name="accept-language" elementType="Header">
+                  <stringProp name="Header.name">accept-language</stringProp>
+                  <stringProp name="Header.value">en-US,en;q=0.9</stringProp>
                 </elementProp>
-                <elementProp name="Sec-Fetch-Dest" elementType="Header">
-                  <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
+                <elementProp name="cache-control" elementType="Header">
+                  <stringProp name="Header.name">cache-control</stringProp>
+                  <stringProp name="Header.value">no-cache</stringProp>
+                </elementProp>
+                <elementProp name="content-length" elementType="Header">
+                  <stringProp name="Header.name">content-length</stringProp>
+                  <stringProp name="Header.value">264</stringProp>
+                </elementProp>
+                <elementProp name="content-type" elementType="Header">
+                  <stringProp name="Header.name">content-type</stringProp>
+                  <stringProp name="Header.value">application/x-www-form-urlencoded; charset=UTF-8</stringProp>
+                </elementProp>
+                <elementProp name="cookie" elementType="Header">
+                  <stringProp name="Header.name">cookie</stringProp>
+                  <stringProp name="Header.value">_ga=GA1.2.220370839.1673518291; _gcl_au=1.1.851617932.1673962394; .Nop.Session=CfDJ8Lq3qIcO6ytCqFyhqkpa6tqKknZXwqzTrm6FlIzEIzhgZ25jhDp%2FfkcARFT6L5kV%2FmjfHVqQmaZ%2FsTeq0sZLY92Li6WJJxuD37jIUCO9CENl50EEhms%2BT%2BC9OMB0TgqyN9rOvCnl7yEy%2B7aVfHVpPzLlwZGB7o3APN7IyXN5zfOr; .Nop.Antiforgery=CfDJ8Lq3qIcO6ytCqFyhqkpa6tqvEyR3NDgGilyW2dD_nNfm9nftyUClgRJcqbFezh8KsAhGvz8TOmGy0Z94NnqqaYsHqeTObWgFRobHLbtuZJoozG9qwc--QeqUGJeLQPjtCvBC0cUk6YCEClQJt-g9f_4; .Nop.Authentication=CfDJ8Lq3qIcO6ytCqFyhqkpa6trgkJKt1rHkXRrGJ2STUFZogQ-4Q7dC76neh3DoQVgN_PF4QoLKtDmKCHqiH6XMh7mUbBgQv_rT0NqbMPv8hh81skb48DS9UzczeFs1ZL5h5Yd4Y3OkZ_bM7LhVwmtFl4bT2HVUgY7_rr-1JvFliyfQILA2MU0W4HccAR9AT3x835V0tpZy4MLLXr5j6VT3GzmjhISaNdSDi_qel3Sqn_iVM-rN-_FgDFxP_pcxOHGe9pkSktWwRn0lQdcqdErFEWZKC8QQJ5irX1UOlpGSmr9xRQJmq75oXR_Sluqzl4aWqvxCloXVXlbP98NYaFvUQTamR7Tpn2JCWVYMrcGdaRlsNlJ0_tDbT5vbgh8_Dxw27tZ5z98Le7R7IyOhGq3HKSOFvyMouGvCbovus48zIVCTrtWfeYcL2nb_DccC0aewKBRSYDdziaM91Qgduxm5GzqfJIyraHxt55hOli_oScqdvcpX0dpAZG2lMIjtOfJJHHdFtWys4nLDQzX5SvNeamwFUrHjjtow5gfFiDl9gBHCAoZnjXNWXRvwWEIWDd64OSh-HFT79K0HY-pHcdIRrfs; .Nop.RecentlyViewedProducts=25%2C1%2C43; __atuvc=1%7C3%2C59%7C4%2C9%7C5; __atuvs=63d69d566120e8f1001; .Nop.Customer=918d5d36-d979-4789-937a-589bfde64824; .Nop.Culture=c%3Den-US%7Cuic%3Den-US</stringProp>
+                </elementProp>
+                <elementProp name="origin" elementType="Header">
+                  <stringProp name="Header.name">origin</stringProp>
+                  <stringProp name="Header.value">https://demo.nopcommerce.com</stringProp>
+                </elementProp>
+                <elementProp name="pragma" elementType="Header">
+                  <stringProp name="Header.name">pragma</stringProp>
+                  <stringProp name="Header.value">no-cache</stringProp>
+                </elementProp>
+                <elementProp name="referer" elementType="Header">
+                  <stringProp name="Header.name">referer</stringProp>
+                  <stringProp name="Header.value">https://demo.nopcommerce.com/onepagecheckout</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua</stringProp>
+                  <stringProp name="Header.value">&quot;Not?A_Brand&quot;;v=&quot;8&quot;, &quot;Chromium&quot;;v=&quot;108&quot;, &quot;Microsoft Edge&quot;;v=&quot;108&quot;</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-mobile" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
+                  <stringProp name="Header.value">?0</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-platform" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
+                  <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
+                </elementProp>
+                <elementProp name="sec-fetch-dest" elementType="Header">
+                  <stringProp name="Header.name">sec-fetch-dest</stringProp>
                   <stringProp name="Header.value">empty</stringProp>
+                </elementProp>
+                <elementProp name="sec-fetch-mode" elementType="Header">
+                  <stringProp name="Header.name">sec-fetch-mode</stringProp>
+                  <stringProp name="Header.value">cors</stringProp>
+                </elementProp>
+                <elementProp name="sec-fetch-site" elementType="Header">
+                  <stringProp name="Header.name">sec-fetch-site</stringProp>
+                  <stringProp name="Header.value">same-origin</stringProp>
+                </elementProp>
+                <elementProp name="user-agent" elementType="Header">
+                  <stringProp name="Header.name">user-agent</stringProp>
+                  <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.76</stringProp>
+                </elementProp>
+                <elementProp name="x-requested-with" elementType="Header">
+                  <stringProp name="Header.name">x-requested-with</stringProp>
+                  <stringProp name="Header.value">XMLHttpRequest</stringProp>
                 </elementProp>
               </collectionProp>
             </HeaderManager>
+            <hashTree/>
+            <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="User Parameters" enabled="true">
+              <collectionProp name="UserParameters.names">
+                <stringProp name="2044592743">PaymentMethod</stringProp>
+              </collectionProp>
+              <collectionProp name="UserParameters.thread_values">
+                <collectionProp name="-768990490">
+                  <stringProp name="372298965">Payments.CheckMoneyOrder</stringProp>
+                </collectionProp>
+              </collectionProp>
+              <boolProp name="UserParameters.per_iteration">false</boolProp>
+            </UserParameters>
             <hashTree/>
           </hashTree>
         </hashTree>
@@ -1928,49 +2389,77 @@
           <hashTree>
             <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
               <collectionProp name="HeaderManager.headers">
-                <elementProp name="Sec-Fetch-Mode" elementType="Header">
-                  <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
-                  <stringProp name="Header.value">cors</stringProp>
-                </elementProp>
-                <elementProp name="Referer" elementType="Header">
-                  <stringProp name="Header.name">Referer</stringProp>
-                  <stringProp name="Header.value">${scheme}://${host}/onepagecheckout</stringProp>
-                </elementProp>
-                <elementProp name="Sec-Fetch-Site" elementType="Header">
-                  <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
-                  <stringProp name="Header.value">same-origin</stringProp>
-                </elementProp>
-                <elementProp name="Accept-Language" elementType="Header">
-                  <stringProp name="Header.name">Accept-Language</stringProp>
-                  <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
-                </elementProp>
-                <elementProp name="Origin" elementType="Header">
-                  <stringProp name="Header.name">Origin</stringProp>
-                  <stringProp name="Header.value">${scheme}://${host}</stringProp>
-                </elementProp>
-                <elementProp name="Accept" elementType="Header">
-                  <stringProp name="Header.name">Accept</stringProp>
+                <elementProp name="accept" elementType="Header">
+                  <stringProp name="Header.name">accept</stringProp>
                   <stringProp name="Header.value">*/*</stringProp>
                 </elementProp>
-                <elementProp name="X-Requested-With" elementType="Header">
-                  <stringProp name="Header.name">X-Requested-With</stringProp>
-                  <stringProp name="Header.value">XMLHttpRequest</stringProp>
-                </elementProp>
-                <elementProp name="Content-Type" elementType="Header">
-                  <stringProp name="Header.name">Content-Type</stringProp>
-                  <stringProp name="Header.value">application/x-www-form-urlencoded; charset=UTF-8</stringProp>
-                </elementProp>
-                <elementProp name="Accept-Encoding" elementType="Header">
-                  <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <elementProp name="accept-encoding" elementType="Header">
+                  <stringProp name="Header.name">accept-encoding</stringProp>
                   <stringProp name="Header.value">gzip, deflate, br</stringProp>
                 </elementProp>
-                <elementProp name="User-Agent" elementType="Header">
-                  <stringProp name="Header.name">User-Agent</stringProp>
-                  <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/109.0</stringProp>
+                <elementProp name="accept-language" elementType="Header">
+                  <stringProp name="Header.name">accept-language</stringProp>
+                  <stringProp name="Header.value">en-US,en;q=0.9</stringProp>
                 </elementProp>
-                <elementProp name="Sec-Fetch-Dest" elementType="Header">
-                  <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
+                <elementProp name="cache-control" elementType="Header">
+                  <stringProp name="Header.name">cache-control</stringProp>
+                  <stringProp name="Header.value">no-cache</stringProp>
+                </elementProp>
+                <elementProp name="content-length" elementType="Header">
+                  <stringProp name="Header.name">content-length</stringProp>
+                  <stringProp name="Header.value">225</stringProp>
+                </elementProp>
+                <elementProp name="content-type" elementType="Header">
+                  <stringProp name="Header.name">content-type</stringProp>
+                  <stringProp name="Header.value">application/x-www-form-urlencoded; charset=UTF-8</stringProp>
+                </elementProp>
+                <elementProp name="cookie" elementType="Header">
+                  <stringProp name="Header.name">cookie</stringProp>
+                  <stringProp name="Header.value">_ga=GA1.2.220370839.1673518291; _gcl_au=1.1.851617932.1673962394; .Nop.Session=CfDJ8Lq3qIcO6ytCqFyhqkpa6tqKknZXwqzTrm6FlIzEIzhgZ25jhDp%2FfkcARFT6L5kV%2FmjfHVqQmaZ%2FsTeq0sZLY92Li6WJJxuD37jIUCO9CENl50EEhms%2BT%2BC9OMB0TgqyN9rOvCnl7yEy%2B7aVfHVpPzLlwZGB7o3APN7IyXN5zfOr; .Nop.Antiforgery=CfDJ8Lq3qIcO6ytCqFyhqkpa6tqvEyR3NDgGilyW2dD_nNfm9nftyUClgRJcqbFezh8KsAhGvz8TOmGy0Z94NnqqaYsHqeTObWgFRobHLbtuZJoozG9qwc--QeqUGJeLQPjtCvBC0cUk6YCEClQJt-g9f_4; .Nop.Authentication=CfDJ8Lq3qIcO6ytCqFyhqkpa6trgkJKt1rHkXRrGJ2STUFZogQ-4Q7dC76neh3DoQVgN_PF4QoLKtDmKCHqiH6XMh7mUbBgQv_rT0NqbMPv8hh81skb48DS9UzczeFs1ZL5h5Yd4Y3OkZ_bM7LhVwmtFl4bT2HVUgY7_rr-1JvFliyfQILA2MU0W4HccAR9AT3x835V0tpZy4MLLXr5j6VT3GzmjhISaNdSDi_qel3Sqn_iVM-rN-_FgDFxP_pcxOHGe9pkSktWwRn0lQdcqdErFEWZKC8QQJ5irX1UOlpGSmr9xRQJmq75oXR_Sluqzl4aWqvxCloXVXlbP98NYaFvUQTamR7Tpn2JCWVYMrcGdaRlsNlJ0_tDbT5vbgh8_Dxw27tZ5z98Le7R7IyOhGq3HKSOFvyMouGvCbovus48zIVCTrtWfeYcL2nb_DccC0aewKBRSYDdziaM91Qgduxm5GzqfJIyraHxt55hOli_oScqdvcpX0dpAZG2lMIjtOfJJHHdFtWys4nLDQzX5SvNeamwFUrHjjtow5gfFiDl9gBHCAoZnjXNWXRvwWEIWDd64OSh-HFT79K0HY-pHcdIRrfs; .Nop.RecentlyViewedProducts=25%2C1%2C43; __atuvc=1%7C3%2C59%7C4%2C9%7C5; __atuvs=63d69d566120e8f1001; .Nop.Customer=918d5d36-d979-4789-937a-589bfde64824; .Nop.Culture=c%3Den-US%7Cuic%3Den-US</stringProp>
+                </elementProp>
+                <elementProp name="origin" elementType="Header">
+                  <stringProp name="Header.name">origin</stringProp>
+                  <stringProp name="Header.value">https://demo.nopcommerce.com</stringProp>
+                </elementProp>
+                <elementProp name="pragma" elementType="Header">
+                  <stringProp name="Header.name">pragma</stringProp>
+                  <stringProp name="Header.value">no-cache</stringProp>
+                </elementProp>
+                <elementProp name="referer" elementType="Header">
+                  <stringProp name="Header.name">referer</stringProp>
+                  <stringProp name="Header.value">https://demo.nopcommerce.com/onepagecheckout</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua</stringProp>
+                  <stringProp name="Header.value">&quot;Not?A_Brand&quot;;v=&quot;8&quot;, &quot;Chromium&quot;;v=&quot;108&quot;, &quot;Microsoft Edge&quot;;v=&quot;108&quot;</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-mobile" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
+                  <stringProp name="Header.value">?0</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-platform" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
+                  <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
+                </elementProp>
+                <elementProp name="sec-fetch-dest" elementType="Header">
+                  <stringProp name="Header.name">sec-fetch-dest</stringProp>
                   <stringProp name="Header.value">empty</stringProp>
+                </elementProp>
+                <elementProp name="sec-fetch-mode" elementType="Header">
+                  <stringProp name="Header.name">sec-fetch-mode</stringProp>
+                  <stringProp name="Header.value">cors</stringProp>
+                </elementProp>
+                <elementProp name="sec-fetch-site" elementType="Header">
+                  <stringProp name="Header.name">sec-fetch-site</stringProp>
+                  <stringProp name="Header.value">same-origin</stringProp>
+                </elementProp>
+                <elementProp name="user-agent" elementType="Header">
+                  <stringProp name="Header.name">user-agent</stringProp>
+                  <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.76</stringProp>
+                </elementProp>
+                <elementProp name="x-requested-with" elementType="Header">
+                  <stringProp name="Header.name">x-requested-with</stringProp>
+                  <stringProp name="Header.value">XMLHttpRequest</stringProp>
                 </elementProp>
               </collectionProp>
             </HeaderManager>
@@ -2005,49 +2494,77 @@
           <hashTree>
             <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
               <collectionProp name="HeaderManager.headers">
-                <elementProp name="Sec-Fetch-Mode" elementType="Header">
-                  <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
-                  <stringProp name="Header.value">cors</stringProp>
-                </elementProp>
-                <elementProp name="Referer" elementType="Header">
-                  <stringProp name="Header.name">Referer</stringProp>
-                  <stringProp name="Header.value">${scheme}://${host}/onepagecheckout</stringProp>
-                </elementProp>
-                <elementProp name="Sec-Fetch-Site" elementType="Header">
-                  <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
-                  <stringProp name="Header.value">same-origin</stringProp>
-                </elementProp>
-                <elementProp name="Accept-Language" elementType="Header">
-                  <stringProp name="Header.name">Accept-Language</stringProp>
-                  <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
-                </elementProp>
-                <elementProp name="Origin" elementType="Header">
-                  <stringProp name="Header.name">Origin</stringProp>
-                  <stringProp name="Header.value">${scheme}://${host}</stringProp>
-                </elementProp>
-                <elementProp name="Accept" elementType="Header">
-                  <stringProp name="Header.name">Accept</stringProp>
+                <elementProp name="accept" elementType="Header">
+                  <stringProp name="Header.name">accept</stringProp>
                   <stringProp name="Header.value">*/*</stringProp>
                 </elementProp>
-                <elementProp name="X-Requested-With" elementType="Header">
-                  <stringProp name="Header.name">X-Requested-With</stringProp>
-                  <stringProp name="Header.value">XMLHttpRequest</stringProp>
-                </elementProp>
-                <elementProp name="Content-Type" elementType="Header">
-                  <stringProp name="Header.name">Content-Type</stringProp>
-                  <stringProp name="Header.value">application/x-www-form-urlencoded; charset=UTF-8</stringProp>
-                </elementProp>
-                <elementProp name="Accept-Encoding" elementType="Header">
-                  <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <elementProp name="accept-encoding" elementType="Header">
+                  <stringProp name="Header.name">accept-encoding</stringProp>
                   <stringProp name="Header.value">gzip, deflate, br</stringProp>
                 </elementProp>
-                <elementProp name="User-Agent" elementType="Header">
-                  <stringProp name="Header.name">User-Agent</stringProp>
-                  <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/109.0</stringProp>
+                <elementProp name="accept-language" elementType="Header">
+                  <stringProp name="Header.name">accept-language</stringProp>
+                  <stringProp name="Header.value">en-US,en;q=0.9</stringProp>
                 </elementProp>
-                <elementProp name="Sec-Fetch-Dest" elementType="Header">
-                  <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
+                <elementProp name="cache-control" elementType="Header">
+                  <stringProp name="Header.name">cache-control</stringProp>
+                  <stringProp name="Header.value">no-cache</stringProp>
+                </elementProp>
+                <elementProp name="content-length" elementType="Header">
+                  <stringProp name="Header.name">content-length</stringProp>
+                  <stringProp name="Header.value">225</stringProp>
+                </elementProp>
+                <elementProp name="content-type" elementType="Header">
+                  <stringProp name="Header.name">content-type</stringProp>
+                  <stringProp name="Header.value">application/x-www-form-urlencoded; charset=UTF-8</stringProp>
+                </elementProp>
+                <elementProp name="cookie" elementType="Header">
+                  <stringProp name="Header.name">cookie</stringProp>
+                  <stringProp name="Header.value">_ga=GA1.2.220370839.1673518291; _gcl_au=1.1.851617932.1673962394; .Nop.Session=CfDJ8Lq3qIcO6ytCqFyhqkpa6tqKknZXwqzTrm6FlIzEIzhgZ25jhDp%2FfkcARFT6L5kV%2FmjfHVqQmaZ%2FsTeq0sZLY92Li6WJJxuD37jIUCO9CENl50EEhms%2BT%2BC9OMB0TgqyN9rOvCnl7yEy%2B7aVfHVpPzLlwZGB7o3APN7IyXN5zfOr; .Nop.Antiforgery=CfDJ8Lq3qIcO6ytCqFyhqkpa6tqvEyR3NDgGilyW2dD_nNfm9nftyUClgRJcqbFezh8KsAhGvz8TOmGy0Z94NnqqaYsHqeTObWgFRobHLbtuZJoozG9qwc--QeqUGJeLQPjtCvBC0cUk6YCEClQJt-g9f_4; .Nop.Authentication=CfDJ8Lq3qIcO6ytCqFyhqkpa6trgkJKt1rHkXRrGJ2STUFZogQ-4Q7dC76neh3DoQVgN_PF4QoLKtDmKCHqiH6XMh7mUbBgQv_rT0NqbMPv8hh81skb48DS9UzczeFs1ZL5h5Yd4Y3OkZ_bM7LhVwmtFl4bT2HVUgY7_rr-1JvFliyfQILA2MU0W4HccAR9AT3x835V0tpZy4MLLXr5j6VT3GzmjhISaNdSDi_qel3Sqn_iVM-rN-_FgDFxP_pcxOHGe9pkSktWwRn0lQdcqdErFEWZKC8QQJ5irX1UOlpGSmr9xRQJmq75oXR_Sluqzl4aWqvxCloXVXlbP98NYaFvUQTamR7Tpn2JCWVYMrcGdaRlsNlJ0_tDbT5vbgh8_Dxw27tZ5z98Le7R7IyOhGq3HKSOFvyMouGvCbovus48zIVCTrtWfeYcL2nb_DccC0aewKBRSYDdziaM91Qgduxm5GzqfJIyraHxt55hOli_oScqdvcpX0dpAZG2lMIjtOfJJHHdFtWys4nLDQzX5SvNeamwFUrHjjtow5gfFiDl9gBHCAoZnjXNWXRvwWEIWDd64OSh-HFT79K0HY-pHcdIRrfs; .Nop.RecentlyViewedProducts=25%2C1%2C43; __atuvc=1%7C3%2C59%7C4%2C9%7C5; __atuvs=63d69d566120e8f1001; .Nop.Customer=918d5d36-d979-4789-937a-589bfde64824; .Nop.Culture=c%3Den-US%7Cuic%3Den-US</stringProp>
+                </elementProp>
+                <elementProp name="origin" elementType="Header">
+                  <stringProp name="Header.name">origin</stringProp>
+                  <stringProp name="Header.value">https://demo.nopcommerce.com</stringProp>
+                </elementProp>
+                <elementProp name="pragma" elementType="Header">
+                  <stringProp name="Header.name">pragma</stringProp>
+                  <stringProp name="Header.value">no-cache</stringProp>
+                </elementProp>
+                <elementProp name="referer" elementType="Header">
+                  <stringProp name="Header.name">referer</stringProp>
+                  <stringProp name="Header.value">https://demo.nopcommerce.com/onepagecheckout</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua</stringProp>
+                  <stringProp name="Header.value">&quot;Not?A_Brand&quot;;v=&quot;8&quot;, &quot;Chromium&quot;;v=&quot;108&quot;, &quot;Microsoft Edge&quot;;v=&quot;108&quot;</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-mobile" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
+                  <stringProp name="Header.value">?0</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-platform" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
+                  <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
+                </elementProp>
+                <elementProp name="sec-fetch-dest" elementType="Header">
+                  <stringProp name="Header.name">sec-fetch-dest</stringProp>
                   <stringProp name="Header.value">empty</stringProp>
+                </elementProp>
+                <elementProp name="sec-fetch-mode" elementType="Header">
+                  <stringProp name="Header.name">sec-fetch-mode</stringProp>
+                  <stringProp name="Header.value">cors</stringProp>
+                </elementProp>
+                <elementProp name="sec-fetch-site" elementType="Header">
+                  <stringProp name="Header.name">sec-fetch-site</stringProp>
+                  <stringProp name="Header.value">same-origin</stringProp>
+                </elementProp>
+                <elementProp name="user-agent" elementType="Header">
+                  <stringProp name="Header.name">user-agent</stringProp>
+                  <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.76</stringProp>
+                </elementProp>
+                <elementProp name="x-requested-with" elementType="Header">
+                  <stringProp name="Header.name">x-requested-with</stringProp>
+                  <stringProp name="Header.value">XMLHttpRequest</stringProp>
                 </elementProp>
               </collectionProp>
             </HeaderManager>
@@ -2074,48 +2591,103 @@
           <hashTree>
             <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
               <collectionProp name="HeaderManager.headers">
-                <elementProp name="Sec-Fetch-Mode" elementType="Header">
-                  <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
-                  <stringProp name="Header.value">navigate</stringProp>
+                <elementProp name="accept" elementType="Header">
+                  <stringProp name="Header.name">accept</stringProp>
+                  <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9</stringProp>
                 </elementProp>
-                <elementProp name="Referer" elementType="Header">
-                  <stringProp name="Header.name">Referer</stringProp>
-                  <stringProp name="Header.value">${scheme}://${host}/onepagecheckout</stringProp>
-                </elementProp>
-                <elementProp name="Sec-Fetch-Site" elementType="Header">
-                  <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
-                  <stringProp name="Header.value">same-origin</stringProp>
-                </elementProp>
-                <elementProp name="Accept-Language" elementType="Header">
-                  <stringProp name="Header.name">Accept-Language</stringProp>
-                  <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
-                </elementProp>
-                <elementProp name="Sec-Fetch-User" elementType="Header">
-                  <stringProp name="Header.name">Sec-Fetch-User</stringProp>
-                  <stringProp name="Header.value">?1</stringProp>
-                </elementProp>
-                <elementProp name="Accept" elementType="Header">
-                  <stringProp name="Header.name">Accept</stringProp>
-                  <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8</stringProp>
-                </elementProp>
-                <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
-                  <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
-                  <stringProp name="Header.value">1</stringProp>
-                </elementProp>
-                <elementProp name="Accept-Encoding" elementType="Header">
-                  <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <elementProp name="accept-encoding" elementType="Header">
+                  <stringProp name="Header.name">accept-encoding</stringProp>
                   <stringProp name="Header.value">gzip, deflate, br</stringProp>
                 </elementProp>
-                <elementProp name="User-Agent" elementType="Header">
-                  <stringProp name="Header.name">User-Agent</stringProp>
-                  <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/109.0</stringProp>
+                <elementProp name="accept-language" elementType="Header">
+                  <stringProp name="Header.name">accept-language</stringProp>
+                  <stringProp name="Header.value">en-US,en;q=0.9</stringProp>
                 </elementProp>
-                <elementProp name="Sec-Fetch-Dest" elementType="Header">
-                  <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
+                <elementProp name="cache-control" elementType="Header">
+                  <stringProp name="Header.name">cache-control</stringProp>
+                  <stringProp name="Header.value">no-cache</stringProp>
+                </elementProp>
+                <elementProp name="cookie" elementType="Header">
+                  <stringProp name="Header.name">cookie</stringProp>
+                  <stringProp name="Header.value">_ga=GA1.2.220370839.1673518291; _gcl_au=1.1.851617932.1673962394; .Nop.Session=CfDJ8Lq3qIcO6ytCqFyhqkpa6tqKknZXwqzTrm6FlIzEIzhgZ25jhDp%2FfkcARFT6L5kV%2FmjfHVqQmaZ%2FsTeq0sZLY92Li6WJJxuD37jIUCO9CENl50EEhms%2BT%2BC9OMB0TgqyN9rOvCnl7yEy%2B7aVfHVpPzLlwZGB7o3APN7IyXN5zfOr; .Nop.Antiforgery=CfDJ8Lq3qIcO6ytCqFyhqkpa6tqvEyR3NDgGilyW2dD_nNfm9nftyUClgRJcqbFezh8KsAhGvz8TOmGy0Z94NnqqaYsHqeTObWgFRobHLbtuZJoozG9qwc--QeqUGJeLQPjtCvBC0cUk6YCEClQJt-g9f_4; .Nop.Authentication=CfDJ8Lq3qIcO6ytCqFyhqkpa6trgkJKt1rHkXRrGJ2STUFZogQ-4Q7dC76neh3DoQVgN_PF4QoLKtDmKCHqiH6XMh7mUbBgQv_rT0NqbMPv8hh81skb48DS9UzczeFs1ZL5h5Yd4Y3OkZ_bM7LhVwmtFl4bT2HVUgY7_rr-1JvFliyfQILA2MU0W4HccAR9AT3x835V0tpZy4MLLXr5j6VT3GzmjhISaNdSDi_qel3Sqn_iVM-rN-_FgDFxP_pcxOHGe9pkSktWwRn0lQdcqdErFEWZKC8QQJ5irX1UOlpGSmr9xRQJmq75oXR_Sluqzl4aWqvxCloXVXlbP98NYaFvUQTamR7Tpn2JCWVYMrcGdaRlsNlJ0_tDbT5vbgh8_Dxw27tZ5z98Le7R7IyOhGq3HKSOFvyMouGvCbovus48zIVCTrtWfeYcL2nb_DccC0aewKBRSYDdziaM91Qgduxm5GzqfJIyraHxt55hOli_oScqdvcpX0dpAZG2lMIjtOfJJHHdFtWys4nLDQzX5SvNeamwFUrHjjtow5gfFiDl9gBHCAoZnjXNWXRvwWEIWDd64OSh-HFT79K0HY-pHcdIRrfs; .Nop.RecentlyViewedProducts=25%2C1%2C43; __atuvc=1%7C3%2C59%7C4%2C9%7C5; __atuvs=63d69d566120e8f1001; .Nop.Customer=918d5d36-d979-4789-937a-589bfde64824; .Nop.Culture=c%3Den-US%7Cuic%3Den-US</stringProp>
+                </elementProp>
+                <elementProp name="pragma" elementType="Header">
+                  <stringProp name="Header.name">pragma</stringProp>
+                  <stringProp name="Header.value">no-cache</stringProp>
+                </elementProp>
+                <elementProp name="referer" elementType="Header">
+                  <stringProp name="Header.name">referer</stringProp>
+                  <stringProp name="Header.value">https://demo.nopcommerce.com/onepagecheckout</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua</stringProp>
+                  <stringProp name="Header.value">&quot;Not?A_Brand&quot;;v=&quot;8&quot;, &quot;Chromium&quot;;v=&quot;108&quot;, &quot;Microsoft Edge&quot;;v=&quot;108&quot;</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-mobile" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
+                  <stringProp name="Header.value">?0</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-platform" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
+                  <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
+                </elementProp>
+                <elementProp name="sec-fetch-dest" elementType="Header">
+                  <stringProp name="Header.name">sec-fetch-dest</stringProp>
                   <stringProp name="Header.value">document</stringProp>
+                </elementProp>
+                <elementProp name="sec-fetch-mode" elementType="Header">
+                  <stringProp name="Header.name">sec-fetch-mode</stringProp>
+                  <stringProp name="Header.value">navigate</stringProp>
+                </elementProp>
+                <elementProp name="sec-fetch-site" elementType="Header">
+                  <stringProp name="Header.name">sec-fetch-site</stringProp>
+                  <stringProp name="Header.value">same-origin</stringProp>
+                </elementProp>
+                <elementProp name="sec-fetch-user" elementType="Header">
+                  <stringProp name="Header.name">sec-fetch-user</stringProp>
+                  <stringProp name="Header.value">?1</stringProp>
+                </elementProp>
+                <elementProp name="upgrade-insecure-requests" elementType="Header">
+                  <stringProp name="Header.name">upgrade-insecure-requests</stringProp>
+                  <stringProp name="Header.value">1</stringProp>
+                </elementProp>
+                <elementProp name="user-agent" elementType="Header">
+                  <stringProp name="Header.name">user-agent</stringProp>
+                  <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.76</stringProp>
                 </elementProp>
               </collectionProp>
             </HeaderManager>
+            <hashTree/>
+            <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="XPath Assertion" enabled="false">
+              <boolProp name="XPath.negate">false</boolProp>
+              <stringProp name="XPath.xpath">//div[@class=&apos;order-number&apos;]/strong</stringProp>
+              <boolProp name="XPath.validate">false</boolProp>
+              <boolProp name="XPath.whitespace">false</boolProp>
+              <boolProp name="XPath.tolerant">true</boolProp>
+              <boolProp name="XPath.namespace">false</boolProp>
+            </XPathAssertion>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="false">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="803542498">Your order has been successfully processed!
+ORDER NUMBER
+</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="1259646842">nopCommerce demo store</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
             <hashTree/>
           </hashTree>
         </hashTree>

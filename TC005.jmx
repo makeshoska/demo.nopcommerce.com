@@ -229,7 +229,7 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname=" Fahrenheit 451 by Ray Bradbury" enabled="true">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Fahrenheit 451 by Ray Bradbury" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
           <boolProp name="TransactionController.parent">true</boolProp>
         </TransactionController>
@@ -624,7 +624,7 @@
             <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="XPath Extractor- StateProvinceId" enabled="true">
               <stringProp name="XPathExtractor.default">Not Found</stringProp>
               <stringProp name="XPathExtractor.refname">StateProvinceId</stringProp>
-              <stringProp name="XPathExtractor.matchNumber">1</stringProp>
+              <stringProp name="XPathExtractor.matchNumber">0</stringProp>
               <stringProp name="XPathExtractor.xpathQuery">//select[@id=&apos;StateProvinceId&apos;]/option/@value</stringProp>
               <boolProp name="XPathExtractor.validate">false</boolProp>
               <boolProp name="XPathExtractor.tolerant">true</boolProp>
@@ -634,7 +634,7 @@
             <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="XPath Extractor-CountryId" enabled="true">
               <stringProp name="XPathExtractor.default">Not Found</stringProp>
               <stringProp name="XPathExtractor.refname">CountryId</stringProp>
-              <stringProp name="XPathExtractor.matchNumber">0</stringProp>
+              <stringProp name="XPathExtractor.matchNumber">1</stringProp>
               <stringProp name="XPathExtractor.xpathQuery">//select[@id=&apos;CountryId&apos;]/option/@value</stringProp>
               <boolProp name="XPathExtractor.validate">false</boolProp>
               <boolProp name="XPathExtractor.tolerant">true</boolProp>
@@ -758,9 +758,9 @@
                 <stringProp name="346877753">ZipPostalCode</stringProp>
               </collectionProp>
               <collectionProp name="UserParameters.thread_values">
-                <collectionProp name="1066413864">
-                  <stringProp name="228553875">${__RandomString(2,1234)} </stringProp>
-                  <stringProp name="-1921145749">${__RandomString(5,123456789)} </stringProp>
+                <collectionProp name="-1219245983">
+                  <stringProp name="-1504752903">${__RandomString(2,1234,)} </stringProp>
+                  <stringProp name="574035489">${__RandomString(5,123456789,)} </stringProp>
                 </collectionProp>
               </collectionProp>
               <boolProp name="UserParameters.per_iteration">false</boolProp>
@@ -1073,7 +1073,7 @@
                 <stringProp name="-668017711">PrideAndPrejudiceQuantity</stringProp>
               </collectionProp>
               <collectionProp name="UserParameters.thread_values">
-                <collectionProp name="228553906">
+                <collectionProp name="-560831486">
                   <stringProp name="228553875">${__RandomString(2,1234)} </stringProp>
                 </collectionProp>
               </collectionProp>
@@ -1186,16 +1186,6 @@
               <intProp name="Assertion.test_type">16</intProp>
             </ResponseAssertion>
             <hashTree/>
-            <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="XPath Extractor-Add to cart Id" enabled="true">
-              <stringProp name="XPathExtractor.default">Not Found</stringProp>
-              <stringProp name="XPathExtractor.refname">AddToCartId</stringProp>
-              <stringProp name="XPathExtractor.matchNumber">0</stringProp>
-              <stringProp name="XPathExtractor.xpathQuery">//input[@name=&apos;addtocart&apos;]/@value</stringProp>
-              <boolProp name="XPathExtractor.validate">false</boolProp>
-              <boolProp name="XPathExtractor.tolerant">true</boolProp>
-              <boolProp name="XPathExtractor.namespace">false</boolProp>
-            </XPathExtractor>
-            <hashTree/>
             <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="XPath Extractor- AddToCartButton" enabled="true">
               <stringProp name="XPathExtractor.default">Not Found</stringProp>
               <stringProp name="XPathExtractor.refname">AddToCartButton</stringProp>
@@ -1216,6 +1206,36 @@
               <boolProp name="XPathExtractor.namespace">false</boolProp>
             </XPathExtractor>
             <hashTree/>
+            <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="XPath Extractor-RemoveItem1Id" enabled="true">
+              <stringProp name="XPathExtractor.default">Not Found</stringProp>
+              <stringProp name="XPathExtractor.refname">RemoveItem1Id</stringProp>
+              <stringProp name="XPathExtractor.matchNumber">1</stringProp>
+              <stringProp name="XPathExtractor.xpathQuery">//input[@name=&apos;removefromcart&apos;]/@value</stringProp>
+              <boolProp name="XPathExtractor.validate">false</boolProp>
+              <boolProp name="XPathExtractor.tolerant">true</boolProp>
+              <boolProp name="XPathExtractor.namespace">false</boolProp>
+            </XPathExtractor>
+            <hashTree/>
+            <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="XPath Extractor-RemoveItem2Id" enabled="true">
+              <stringProp name="XPathExtractor.default">Not Found</stringProp>
+              <stringProp name="XPathExtractor.refname">RemoveItem2Id</stringProp>
+              <stringProp name="XPathExtractor.matchNumber">2</stringProp>
+              <stringProp name="XPathExtractor.xpathQuery">//input[@name=&apos;removefromcart&apos;]/@value</stringProp>
+              <boolProp name="XPathExtractor.validate">false</boolProp>
+              <boolProp name="XPathExtractor.tolerant">true</boolProp>
+              <boolProp name="XPathExtractor.namespace">false</boolProp>
+            </XPathExtractor>
+            <hashTree/>
+            <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="XPath Extractor-RemoveItem3Id" enabled="true">
+              <stringProp name="XPathExtractor.default">Not Found</stringProp>
+              <stringProp name="XPathExtractor.refname">RemoveItem3Id</stringProp>
+              <stringProp name="XPathExtractor.matchNumber">3</stringProp>
+              <stringProp name="XPathExtractor.xpathQuery">//input[@name=&apos;removefromcart&apos;]/@value</stringProp>
+              <boolProp name="XPathExtractor.validate">false</boolProp>
+              <boolProp name="XPathExtractor.tolerant">true</boolProp>
+              <boolProp name="XPathExtractor.namespace">false</boolProp>
+            </XPathExtractor>
+            <hashTree/>
           </hashTree>
         </hashTree>
         <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Add to cart" enabled="true">
@@ -1229,13 +1249,13 @@
                 <elementProp name="addtocart" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">addtocart</stringProp>
-                  <stringProp name="Argument.value">${AddToCartId}</stringProp>
+                  <stringProp name="Argument.value">${RemoveItem1Id}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
-                <elementProp name="itemquantity${AddToCartId}" elementType="HTTPArgument">
+                <elementProp name="itemquantity${RemoveItem1Id}" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.name">itemquantity${AddToCartId}</stringProp>
+                  <stringProp name="Argument.name">itemquantity${RemoveItem1Id}</stringProp>
                   <stringProp name="Argument.value">${FahrenheitQuantity}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
@@ -1243,13 +1263,13 @@
                 <elementProp name="addtocart" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">addtocart</stringProp>
-                  <stringProp name="Argument.value">${AddToCartId}</stringProp>
+                  <stringProp name="Argument.value">${RemoveItem2Id}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
-                <elementProp name="itemquantity${AddToCartId}" elementType="HTTPArgument">
+                <elementProp name="itemquantity${RemoveItem2Id}" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.name">itemquantity${AddToCartId}</stringProp>
+                  <stringProp name="Argument.name">itemquantity${RemoveItem2Id}</stringProp>
                   <stringProp name="Argument.value">${FirstPrizePiesQuantity}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
@@ -1257,13 +1277,13 @@
                 <elementProp name="addtocart" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">addtocart</stringProp>
-                  <stringProp name="Argument.value">${AddToCartId}</stringProp>
+                  <stringProp name="Argument.value">${RemoveItem3Id}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
-                <elementProp name="itemquantity${AddToCartId}" elementType="HTTPArgument">
+                <elementProp name="itemquantity${RemoveItem3Id}" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.name">itemquantity${AddToCartId}</stringProp>
+                  <stringProp name="Argument.name">itemquantity${RemoveItem3Id}</stringProp>
                   <stringProp name="Argument.value">${PrideAndPrejudiceQuantity}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
@@ -1466,23 +1486,23 @@
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Checkout" enabled="true">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments">
-                <elementProp name="itemquantity${AddToCartId}" elementType="HTTPArgument">
+                <elementProp name="itemquantity${RemoveItem1Id}" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.name">itemquantity${AddToCartId}</stringProp>
+                  <stringProp name="Argument.name">itemquantity${RemoveItem1Id}</stringProp>
                   <stringProp name="Argument.value">${FahrenheitQuantity}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
-                <elementProp name="itemquantity${AddToCartId}" elementType="HTTPArgument">
+                <elementProp name="itemquantity${RemoveItem2Id}" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.name">itemquantity${AddToCartId}</stringProp>
+                  <stringProp name="Argument.name">itemquantity${RemoveItem2Id}</stringProp>
                   <stringProp name="Argument.value">${FirstPrizePiesQuantity}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
-                <elementProp name="itemquantity${AddToCartId}" elementType="HTTPArgument">
+                <elementProp name="itemquantity${RemoveItem3Id}" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.name">itemquantity${AddToCartId}</stringProp>
+                  <stringProp name="Argument.name">itemquantity${RemoveItem3Id}</stringProp>
                   <stringProp name="Argument.value">${FirstPrizePiesQuantity}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
@@ -1516,16 +1536,16 @@
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="discountcouponcode" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">discountcouponcode</stringProp>
-                  <stringProp name="Argument.value">${DiscountCouponCode}</stringProp>
+                  <stringProp name="Argument.value"></stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="giftcardcouponcode" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">giftcardcouponcode</stringProp>
-                  <stringProp name="Argument.value">${GiftCardCouponCode}</stringProp>
+                  <stringProp name="Argument.value"></stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
@@ -2353,14 +2373,15 @@
               </collectionProp>
             </HeaderManager>
             <hashTree/>
-            <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="XPath Assertion" enabled="true">
-              <boolProp name="XPath.negate">false</boolProp>
-              <stringProp name="XPath.xpath">//td[@class=&apos;sku&apos;]/span[@class=&apos;sku-number&apos;]</stringProp>
-              <boolProp name="XPath.validate">false</boolProp>
-              <boolProp name="XPath.whitespace">false</boolProp>
-              <boolProp name="XPath.tolerant">true</boolProp>
-              <boolProp name="XPath.namespace">false</boolProp>
-            </XPathAssertion>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="194131884">nopCommerce demo store. Shopping Cart</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
             <hashTree/>
           </hashTree>
         </hashTree>
@@ -2372,23 +2393,23 @@
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Checkout" enabled="true">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments">
-                <elementProp name="itemquantity${AddToCartId}" elementType="HTTPArgument">
+                <elementProp name="itemquantity${RemoveItem1Id}" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.name">itemquantity${AddToCartId}</stringProp>
+                  <stringProp name="Argument.name">itemquantity${RemoveItem1Id}</stringProp>
                   <stringProp name="Argument.value">${FahrenheitQuantity}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
-                <elementProp name="itemquantity${AddToCartId}" elementType="HTTPArgument">
+                <elementProp name="itemquantity${RemoveItem2Id}" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.name">itemquantity${AddToCartId}</stringProp>
+                  <stringProp name="Argument.name">itemquantity${RemoveItem2Id}</stringProp>
                   <stringProp name="Argument.value">${FirstPrizePiesQuantity}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
-                <elementProp name="itemquantity${AddToCartId}" elementType="HTTPArgument">
+                <elementProp name="itemquantity${RemoveItem3Id}" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.name">itemquantity${AddToCartId}</stringProp>
+                  <stringProp name="Argument.name">itemquantity${RemoveItem3Id}</stringProp>
                   <stringProp name="Argument.value">${FirstPrizePiesQuantity}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
@@ -2422,16 +2443,16 @@
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="discountcouponcode" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">discountcouponcode</stringProp>
-                  <stringProp name="Argument.value">${DiscountCouponCode}</stringProp>
+                  <stringProp name="Argument.value"></stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="giftcardcouponcode" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">giftcardcouponcode</stringProp>
-                  <stringProp name="Argument.value">${GiftCardCouponCode}</stringProp>
+                  <stringProp name="Argument.value"></stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
@@ -2562,8 +2583,8 @@
                 <stringProp name="-537962541">GiftCardCouponCode</stringProp>
               </collectionProp>
               <collectionProp name="UserParameters.thread_values">
-                <collectionProp name="-1959345380">
-                  <stringProp name="720373655">${__RandomString(8,12345678)} </stringProp>
+                <collectionProp name="1436028811">
+                  <stringProp name="856758389">${__RandomString(8,12345678,)} </stringProp>
                   <stringProp name="58561231">0aef93b2-0ce0</stringProp>
                 </collectionProp>
               </collectionProp>
@@ -2571,7 +2592,7 @@
             </UserParameters>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Checkout form" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Checkout" enabled="true">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
@@ -2758,6 +2779,16 @@
               <intProp name="Assertion.test_type">16</intProp>
             </ResponseAssertion>
             <hashTree/>
+            <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="XPath Extractor- CheckoutToken" enabled="false">
+              <stringProp name="XPathExtractor.default">Not Found</stringProp>
+              <stringProp name="XPathExtractor.refname">CheckoutToken</stringProp>
+              <stringProp name="XPathExtractor.matchNumber">1</stringProp>
+              <stringProp name="XPathExtractor.xpathQuery">//input[@name=&apos;__RequestVerificationToken&apos;]/@value</stringProp>
+              <boolProp name="XPathExtractor.validate">false</boolProp>
+              <boolProp name="XPathExtractor.tolerant">true</boolProp>
+              <boolProp name="XPathExtractor.namespace">false</boolProp>
+            </XPathExtractor>
+            <hashTree/>
           </hashTree>
         </hashTree>
         <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Checkout user- Save billing" enabled="true">
@@ -2765,7 +2796,124 @@
           <boolProp name="TransactionController.parent">true</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Checkout user" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Checkout user- Save billing" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="countryId" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                  <stringProp name="Argument.value">${CountryId}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">countryId</stringProp>
+                </elementProp>
+                <elementProp name="addSelectStateItem" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">true</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">addSelectStateItem</stringProp>
+                </elementProp>
+                <elementProp name="_" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">1675016899971</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">_</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain"></stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/country/getstatesbycountryid?countryId=${CountryId}&amp;addSelectStateItem=true&amp;_=1675016899971</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="accept" elementType="Header">
+                  <stringProp name="Header.name">accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+                <elementProp name="accept-encoding" elementType="Header">
+                  <stringProp name="Header.name">accept-encoding</stringProp>
+                  <stringProp name="Header.value">gzip, deflate, br</stringProp>
+                </elementProp>
+                <elementProp name="accept-language" elementType="Header">
+                  <stringProp name="Header.name">accept-language</stringProp>
+                  <stringProp name="Header.value">en-US,en;q=0.9</stringProp>
+                </elementProp>
+                <elementProp name="cache-control" elementType="Header">
+                  <stringProp name="Header.name">cache-control</stringProp>
+                  <stringProp name="Header.value">no-cache</stringProp>
+                </elementProp>
+                <elementProp name="cookie" elementType="Header">
+                  <stringProp name="Header.name">cookie</stringProp>
+                  <stringProp name="Header.value">_ga=GA1.2.220370839.1673518291; _gcl_au=1.1.851617932.1673962394; .Nop.Session=CfDJ8Lq3qIcO6ytCqFyhqkpa6tqKknZXwqzTrm6FlIzEIzhgZ25jhDp%2FfkcARFT6L5kV%2FmjfHVqQmaZ%2FsTeq0sZLY92Li6WJJxuD37jIUCO9CENl50EEhms%2BT%2BC9OMB0TgqyN9rOvCnl7yEy%2B7aVfHVpPzLlwZGB7o3APN7IyXN5zfOr; .Nop.Antiforgery=CfDJ8Lq3qIcO6ytCqFyhqkpa6tqvEyR3NDgGilyW2dD_nNfm9nftyUClgRJcqbFezh8KsAhGvz8TOmGy0Z94NnqqaYsHqeTObWgFRobHLbtuZJoozG9qwc--QeqUGJeLQPjtCvBC0cUk6YCEClQJt-g9f_4; .Nop.RecentlyViewedProducts=25%2C1%2C43; __atuvc=1%7C3%2C59%7C4%2C9%7C5; .Nop.Authentication=CfDJ8Lq3qIcO6ytCqFyhqkpa6tq5Fsw1Hi8yJuc_j_w06C0LfVEoPqKa-2U14EcsMtvDFBsuk1rC_RIm2jdxzxo2Vijro3FsNuliCBlB37nKKqU9FRT4otOYYfsvLUwEnVLmdBvyGRs4q7STzTDW8qaxK1ToxBpcgDs0CF8YSA-OmFsTyCP_2i71HJ54kOQuoHMsYcfK9OoSP7Vh2mQxz3FWf7hOVcVvkNY2h8GOLlLVbG8m2dB-Ia8P0jZXYIJtMtVtimCGJ3LE3UKgJhBZ6uikIlKGDBjvcMX7NndH6ylamQUik-8Dt2iBM5PetI27DDig0oBgxk9SZqETQeEu4V-HVeWngMlxJULRdK8FCDUJ0HAPs2Ik4Z5p1dV3L-rfWHnvIUzr2x98xXDb0GvVRCGSX_i6TQcTfQRPWQ8hS62QEhsQDGxmHULwZPiV6on1qUeQEh_SSZsef_8pGD7_V4plzkWanGKtn9SzauJ54cY_lEe8n8HGt9utrIr59qijx2SfFlkpD8g_UYt1-pY0OsYhyRVKUky-BArGosj8lo-I_Zurmd7h1Le8a6f7qJRH9TyGyDjGOdVPy4z7ZQNkhrEatKY; .Nop.Customer=42eb2b89-c866-4383-abf9-d2ada5aef73a; .Nop.Culture=c%3Den-US%7Cuic%3Den-US</stringProp>
+                </elementProp>
+                <elementProp name="pragma" elementType="Header">
+                  <stringProp name="Header.name">pragma</stringProp>
+                  <stringProp name="Header.value">no-cache</stringProp>
+                </elementProp>
+                <elementProp name="referer" elementType="Header">
+                  <stringProp name="Header.name">referer</stringProp>
+                  <stringProp name="Header.value">https://demo.nopcommerce.com/onepagecheckout</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua</stringProp>
+                  <stringProp name="Header.value">&quot;Not?A_Brand&quot;;v=&quot;8&quot;, &quot;Chromium&quot;;v=&quot;108&quot;, &quot;Microsoft Edge&quot;;v=&quot;108&quot;</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-mobile" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
+                  <stringProp name="Header.value">?0</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-platform" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
+                  <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
+                </elementProp>
+                <elementProp name="sec-fetch-dest" elementType="Header">
+                  <stringProp name="Header.name">sec-fetch-dest</stringProp>
+                  <stringProp name="Header.value">empty</stringProp>
+                </elementProp>
+                <elementProp name="sec-fetch-mode" elementType="Header">
+                  <stringProp name="Header.name">sec-fetch-mode</stringProp>
+                  <stringProp name="Header.value">cors</stringProp>
+                </elementProp>
+                <elementProp name="sec-fetch-site" elementType="Header">
+                  <stringProp name="Header.name">sec-fetch-site</stringProp>
+                  <stringProp name="Header.value">same-origin</stringProp>
+                </elementProp>
+                <elementProp name="user-agent" elementType="Header">
+                  <stringProp name="Header.name">user-agent</stringProp>
+                  <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.76</stringProp>
+                </elementProp>
+                <elementProp name="x-requested-with" elementType="Header">
+                  <stringProp name="Header.name">x-requested-with</stringProp>
+                  <stringProp name="Header.value">XMLHttpRequest</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="XPath Extractor- BillingNewAddress_Id" enabled="true">
+              <stringProp name="XPathExtractor.default">Not Found</stringProp>
+              <stringProp name="XPathExtractor.refname">BillingNewAddress_Id</stringProp>
+              <stringProp name="XPathExtractor.matchNumber">0</stringProp>
+              <stringProp name="XPathExtractor.xpathQuery">//select[@id=&apos;CountryId&apos;]/option/@value</stringProp>
+              <boolProp name="XPathExtractor.validate">false</boolProp>
+              <boolProp name="XPathExtractor.tolerant">true</boolProp>
+              <boolProp name="XPathExtractor.namespace">false</boolProp>
+            </XPathExtractor>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Checkout user- Save billing" enabled="true">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments">
                 <elementProp name="ShipToSameAddress" elementType="HTTPArgument">
@@ -2785,14 +2933,14 @@
                 <elementProp name="BillingNewAddress.FirstName" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">BillingNewAddress.FirstName</stringProp>
-                  <stringProp name="Argument.value">${FirstName}</stringProp>
+                  <stringProp name="Argument.value">${BillingNewAddress.FirstName}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="BillingNewAddress.LastName" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">BillingNewAddress.LastName</stringProp>
-                  <stringProp name="Argument.value">${LastName}</stringProp>
+                  <stringProp name="Argument.value">${BillingNewAddress.LastName}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
@@ -2806,7 +2954,7 @@
                 <elementProp name="BillingNewAddress.Company" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">BillingNewAddress.Company</stringProp>
-                  <stringProp name="Argument.value">${BillingNewAddress.Company]</stringProp>
+                  <stringProp name="Argument.value">${BillingNewAddress.Company}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
@@ -2899,56 +3047,83 @@
           <hashTree>
             <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
               <collectionProp name="HeaderManager.headers">
-                <elementProp name="Sec-Fetch-Mode" elementType="Header">
-                  <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
-                  <stringProp name="Header.value">cors</stringProp>
-                </elementProp>
-                <elementProp name="Referer" elementType="Header">
-                  <stringProp name="Header.name">Referer</stringProp>
-                  <stringProp name="Header.value">${scheme}://${host}/onepagecheckout</stringProp>
-                </elementProp>
-                <elementProp name="Sec-Fetch-Site" elementType="Header">
-                  <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
-                  <stringProp name="Header.value">same-origin</stringProp>
-                </elementProp>
-                <elementProp name="Accept-Language" elementType="Header">
-                  <stringProp name="Header.name">Accept-Language</stringProp>
-                  <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
-                </elementProp>
-                <elementProp name="Origin" elementType="Header">
-                  <stringProp name="Header.name">Origin</stringProp>
-                  <stringProp name="Header.value">${scheme}://${host}</stringProp>
-                </elementProp>
-                <elementProp name="Accept" elementType="Header">
-                  <stringProp name="Header.name">Accept</stringProp>
+                <elementProp name="accept" elementType="Header">
+                  <stringProp name="Header.name">accept</stringProp>
                   <stringProp name="Header.value">*/*</stringProp>
                 </elementProp>
-                <elementProp name="X-Requested-With" elementType="Header">
-                  <stringProp name="Header.name">X-Requested-With</stringProp>
-                  <stringProp name="Header.value">XMLHttpRequest</stringProp>
-                </elementProp>
-                <elementProp name="Content-Type" elementType="Header">
-                  <stringProp name="Header.name">Content-Type</stringProp>
-                  <stringProp name="Header.value">application/x-www-form-urlencoded; charset=UTF-8</stringProp>
-                </elementProp>
-                <elementProp name="Accept-Encoding" elementType="Header">
-                  <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <elementProp name="accept-encoding" elementType="Header">
+                  <stringProp name="Header.name">accept-encoding</stringProp>
                   <stringProp name="Header.value">gzip, deflate, br</stringProp>
                 </elementProp>
-                <elementProp name="User-Agent" elementType="Header">
-                  <stringProp name="Header.name">User-Agent</stringProp>
-                  <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/109.0</stringProp>
+                <elementProp name="accept-language" elementType="Header">
+                  <stringProp name="Header.name">accept-language</stringProp>
+                  <stringProp name="Header.value">en-US,en;q=0.9</stringProp>
                 </elementProp>
-                <elementProp name="Sec-Fetch-Dest" elementType="Header">
-                  <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
+                <elementProp name="cache-control" elementType="Header">
+                  <stringProp name="Header.name">cache-control</stringProp>
+                  <stringProp name="Header.value">no-cache</stringProp>
+                </elementProp>
+                <elementProp name="content-length" elementType="Header">
+                  <stringProp name="Header.name">content-length</stringProp>
+                  <stringProp name="Header.value">721</stringProp>
+                </elementProp>
+                <elementProp name="content-type" elementType="Header">
+                  <stringProp name="Header.name">content-type</stringProp>
+                  <stringProp name="Header.value">application/x-www-form-urlencoded; charset=UTF-8</stringProp>
+                </elementProp>
+                <elementProp name="cookie" elementType="Header">
+                  <stringProp name="Header.name">cookie</stringProp>
+                  <stringProp name="Header.value">_ga=GA1.2.220370839.1673518291; _gcl_au=1.1.851617932.1673962394; .Nop.Session=CfDJ8Lq3qIcO6ytCqFyhqkpa6tqKknZXwqzTrm6FlIzEIzhgZ25jhDp%2FfkcARFT6L5kV%2FmjfHVqQmaZ%2FsTeq0sZLY92Li6WJJxuD37jIUCO9CENl50EEhms%2BT%2BC9OMB0TgqyN9rOvCnl7yEy%2B7aVfHVpPzLlwZGB7o3APN7IyXN5zfOr; .Nop.Antiforgery=CfDJ8Lq3qIcO6ytCqFyhqkpa6tqvEyR3NDgGilyW2dD_nNfm9nftyUClgRJcqbFezh8KsAhGvz8TOmGy0Z94NnqqaYsHqeTObWgFRobHLbtuZJoozG9qwc--QeqUGJeLQPjtCvBC0cUk6YCEClQJt-g9f_4; .Nop.RecentlyViewedProducts=25%2C1%2C43; __atuvc=1%7C3%2C59%7C4%2C9%7C5; .Nop.Authentication=CfDJ8Lq3qIcO6ytCqFyhqkpa6tq5Fsw1Hi8yJuc_j_w06C0LfVEoPqKa-2U14EcsMtvDFBsuk1rC_RIm2jdxzxo2Vijro3FsNuliCBlB37nKKqU9FRT4otOYYfsvLUwEnVLmdBvyGRs4q7STzTDW8qaxK1ToxBpcgDs0CF8YSA-OmFsTyCP_2i71HJ54kOQuoHMsYcfK9OoSP7Vh2mQxz3FWf7hOVcVvkNY2h8GOLlLVbG8m2dB-Ia8P0jZXYIJtMtVtimCGJ3LE3UKgJhBZ6uikIlKGDBjvcMX7NndH6ylamQUik-8Dt2iBM5PetI27DDig0oBgxk9SZqETQeEu4V-HVeWngMlxJULRdK8FCDUJ0HAPs2Ik4Z5p1dV3L-rfWHnvIUzr2x98xXDb0GvVRCGSX_i6TQcTfQRPWQ8hS62QEhsQDGxmHULwZPiV6on1qUeQEh_SSZsef_8pGD7_V4plzkWanGKtn9SzauJ54cY_lEe8n8HGt9utrIr59qijx2SfFlkpD8g_UYt1-pY0OsYhyRVKUky-BArGosj8lo-I_Zurmd7h1Le8a6f7qJRH9TyGyDjGOdVPy4z7ZQNkhrEatKY; .Nop.Customer=42eb2b89-c866-4383-abf9-d2ada5aef73a; .Nop.Culture=c%3Den-US%7Cuic%3Den-US</stringProp>
+                </elementProp>
+                <elementProp name="origin" elementType="Header">
+                  <stringProp name="Header.name">origin</stringProp>
+                  <stringProp name="Header.value">https://demo.nopcommerce.com</stringProp>
+                </elementProp>
+                <elementProp name="pragma" elementType="Header">
+                  <stringProp name="Header.name">pragma</stringProp>
+                  <stringProp name="Header.value">no-cache</stringProp>
+                </elementProp>
+                <elementProp name="referer" elementType="Header">
+                  <stringProp name="Header.name">referer</stringProp>
+                  <stringProp name="Header.value">https://demo.nopcommerce.com/onepagecheckout</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua</stringProp>
+                  <stringProp name="Header.value">&quot;Not?A_Brand&quot;;v=&quot;8&quot;, &quot;Chromium&quot;;v=&quot;108&quot;, &quot;Microsoft Edge&quot;;v=&quot;108&quot;</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-mobile" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
+                  <stringProp name="Header.value">?0</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-platform" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
+                  <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
+                </elementProp>
+                <elementProp name="sec-fetch-dest" elementType="Header">
+                  <stringProp name="Header.name">sec-fetch-dest</stringProp>
                   <stringProp name="Header.value">empty</stringProp>
+                </elementProp>
+                <elementProp name="sec-fetch-mode" elementType="Header">
+                  <stringProp name="Header.name">sec-fetch-mode</stringProp>
+                  <stringProp name="Header.value">cors</stringProp>
+                </elementProp>
+                <elementProp name="sec-fetch-site" elementType="Header">
+                  <stringProp name="Header.name">sec-fetch-site</stringProp>
+                  <stringProp name="Header.value">same-origin</stringProp>
+                </elementProp>
+                <elementProp name="user-agent" elementType="Header">
+                  <stringProp name="Header.name">user-agent</stringProp>
+                  <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.76</stringProp>
+                </elementProp>
+                <elementProp name="x-requested-with" elementType="Header">
+                  <stringProp name="Header.name">x-requested-with</stringProp>
+                  <stringProp name="Header.value">XMLHttpRequest</stringProp>
                 </elementProp>
               </collectionProp>
             </HeaderManager>
             <hashTree/>
             <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="User Parameters" enabled="true">
               <collectionProp name="UserParameters.names">
-                <stringProp name="-1153811317">BillingNewAddress_Id</stringProp>
                 <stringProp name="-2106090402">BillingNewAddress.Company</stringProp>
                 <stringProp name="-756536022">BillingNewAddress.City</stringProp>
                 <stringProp name="-1483243780">BillingNewAddress.Address1</stringProp>
@@ -2959,22 +3134,21 @@
                 <stringProp name="-1724128640">BillingNewAddress.LastName</stringProp>
               </collectionProp>
               <collectionProp name="UserParameters.thread_values">
-                <collectionProp name="-1674006933">
-                  <stringProp name="48">0</stringProp>
-                  <stringProp name="1597111310">${__RandomString(8,ABCDEFGHIJKLMNOPQRSTUVWXYZ)} </stringProp>
-                  <stringProp name="1597111310">${__RandomString(8,ABCDEFGHIJKLMNOPQRSTUVWXYZ)} </stringProp>
-                  <stringProp name="-998144685">${__RandomString(8,ABCDEFGHIJK12345678)} </stringProp>
-                  <stringProp name="-998144685">${__RandomString(8,ABCDEFGHIJK12345678)} </stringProp>
-                  <stringProp name="720373655">${__RandomString(8,12345678)} </stringProp>
-                  <stringProp name="720373655">${__RandomString(8,12345678)} </stringProp>
-                  <stringProp name="-76408659">${__RandomString(8,fvdxgfgfzxcvn} </stringProp>
-                  <stringProp name="1391519672">${__RandomString(8,ABCDEFGHIJK} </stringProp>
+                <collectionProp name="1706576101">
+                  <stringProp name="-2029145378">${__RandomString(8,ABCDEFGHIJKLMNOPQRSTUVWXYZ,)} </stringProp>
+                  <stringProp name="-2029145378">${__RandomString(8,ABCDEFGHIJKLMNOPQRSTUVWXYZ,)} </stringProp>
+                  <stringProp name="-877702599">${__RandomString(8,ABCDEFGHIJK12345678,)} </stringProp>
+                  <stringProp name="-877702599">${__RandomString(8,ABCDEFGHIJK12345678,)} </stringProp>
+                  <stringProp name="856758389">${__RandomString(8,12345678,)} </stringProp>
+                  <stringProp name="856758389">${__RandomString(8,12345678,)} </stringProp>
+                  <stringProp name="1926221430">${__RandomString(8,fvdxgfgfzxcvn,)}</stringProp>
+                  <stringProp name="187359435">${__RandomString(8,ABCDEFGHIJK,)}</stringProp>
                 </collectionProp>
               </collectionProp>
               <boolProp name="UserParameters.per_iteration">false</boolProp>
             </UserParameters>
             <hashTree/>
-            <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="XPath Extractor-Shippingoption" enabled="true">
+            <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="XPath Extractor-Shippingoption" enabled="false">
               <stringProp name="XPathExtractor.default">Not Found</stringProp>
               <stringProp name="XPathExtractor.refname">Shippingoption</stringProp>
               <stringProp name="XPathExtractor.matchNumber">1</stringProp>
@@ -2984,15 +3158,6 @@
               <boolProp name="XPathExtractor.namespace">false</boolProp>
             </XPathExtractor>
             <hashTree/>
-            <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion" enabled="true">
-              <stringProp name="JSON_PATH">$..name</stringProp>
-              <stringProp name="EXPECTED_VALUE">shipping-method</stringProp>
-              <boolProp name="JSONVALIDATION">true</boolProp>
-              <boolProp name="EXPECT_NULL">false</boolProp>
-              <boolProp name="INVERT">false</boolProp>
-              <boolProp name="ISREGEX">true</boolProp>
-            </JSONPathAssertion>
-            <hashTree/>
           </hashTree>
         </hashTree>
         <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Checkout user- Shipping method" enabled="true">
@@ -3000,13 +3165,13 @@
           <boolProp name="TransactionController.parent">true</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Checkout user" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Checkout user- Shipping method" enabled="true">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments">
                 <elementProp name="shippingoption" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">shippingoption</stringProp>
-                  <stringProp name="Argument.value">${Shippingoption]</stringProp>
+                  <stringProp name="Argument.value">${Shippingoption}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
@@ -3083,7 +3248,7 @@
               </collectionProp>
             </HeaderManager>
             <hashTree/>
-            <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="XPath Extractor-PaymentMethod" enabled="true">
+            <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="XPath Extractor-PaymentMethod" enabled="false">
               <stringProp name="XPathExtractor.default">Not Found</stringProp>
               <stringProp name="XPathExtractor.refname">PaymentMethod</stringProp>
               <stringProp name="XPathExtractor.matchNumber">1</stringProp>
@@ -3093,6 +3258,18 @@
               <boolProp name="XPathExtractor.namespace">false</boolProp>
             </XPathExtractor>
             <hashTree/>
+            <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="User Parameters" enabled="true">
+              <collectionProp name="UserParameters.names">
+                <stringProp name="-881936445">Shippingoption</stringProp>
+              </collectionProp>
+              <collectionProp name="UserParameters.thread_values">
+                <collectionProp name="-657286661">
+                  <stringProp name="-1379895374">Ground___Shipping.FixedByWeightByTotal  </stringProp>
+                </collectionProp>
+              </collectionProp>
+              <boolProp name="UserParameters.per_iteration">false</boolProp>
+            </UserParameters>
+            <hashTree/>
           </hashTree>
         </hashTree>
         <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Checkout user- SavePaymentMethod" enabled="true">
@@ -3100,7 +3277,7 @@
           <boolProp name="TransactionController.parent">true</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Checkout user" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Checkout user- SavePaymentMethod" enabled="true">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments">
                 <elementProp name="paymentmethod" elementType="HTTPArgument">
@@ -3182,6 +3359,18 @@
                 </elementProp>
               </collectionProp>
             </HeaderManager>
+            <hashTree/>
+            <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="User Parameters" enabled="true">
+              <collectionProp name="UserParameters.names">
+                <stringProp name="2044592743">PaymentMethod</stringProp>
+              </collectionProp>
+              <collectionProp name="UserParameters.thread_values">
+                <collectionProp name="1712628057">
+                  <stringProp name="-1343633941">Payments.CheckMoneyOrder </stringProp>
+                </collectionProp>
+              </collectionProp>
+              <boolProp name="UserParameters.per_iteration">false</boolProp>
+            </UserParameters>
             <hashTree/>
           </hashTree>
         </hashTree>

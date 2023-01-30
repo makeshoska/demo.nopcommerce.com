@@ -810,7 +810,7 @@
                 <stringProp name="-1220360021">Quantity</stringProp>
               </collectionProp>
               <collectionProp name="UserParameters.thread_values">
-                <collectionProp name="-1504752872">
+                <collectionProp name="310383378">
                   <stringProp name="-1504752903">${__RandomString(2,1234,)} </stringProp>
                 </collectionProp>
               </collectionProp>
@@ -1464,7 +1464,7 @@
                 <stringProp name="580126925">TshirtQuantity</stringProp>
               </collectionProp>
               <collectionProp name="UserParameters.thread_values">
-                <collectionProp name="961579294">
+                <collectionProp name="1347673790">
                   <stringProp name="574035489">${__RandomString(5,123456789,)} </stringProp>
                   <stringProp name="346347358">${__RandomString(2,123456789,)} </stringProp>
                 </collectionProp>
@@ -2310,7 +2310,7 @@
                 <stringProp name="-1528480909">Giftcardcouponcode</stringProp>
               </collectionProp>
               <collectionProp name="UserParameters.thread_values">
-                <collectionProp name="-1105679182">
+                <collectionProp name="-710352793">
                   <stringProp name="738018742">${__RandomString(2,26789245,)} </stringProp>
                   <stringProp name="58561231">0aef93b2-0ce0</stringProp>
                 </collectionProp>
@@ -3126,7 +3126,7 @@
               <intProp name="Assertion.test_type">16</intProp>
             </ResponseAssertion>
             <hashTree/>
-            <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="XPath Extractor- ShippingMethod" enabled="true">
+            <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="XPath Extractor- ShippingMethod" enabled="false">
               <stringProp name="XPathExtractor.default">Not Found</stringProp>
               <stringProp name="XPathExtractor.refname">ShippingMethod</stringProp>
               <stringProp name="XPathExtractor.matchNumber">1</stringProp>
@@ -3136,7 +3136,7 @@
               <boolProp name="XPathExtractor.namespace">false</boolProp>
             </XPathExtractor>
             <hashTree/>
-            <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="XPath Extractor-PaymentMethod" enabled="true">
+            <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="XPath Extractor-PaymentMethod" enabled="false">
               <stringProp name="XPathExtractor.default">NOt Found</stringProp>
               <stringProp name="XPathExtractor.refname">PaymentMethod</stringProp>
               <stringProp name="XPathExtractor.matchNumber">1</stringProp>
@@ -3166,9 +3166,9 @@
               <boolProp name="XPathExtractor.namespace">false</boolProp>
             </XPathExtractor>
             <hashTree/>
-            <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="XPath Extractor- CheckoutLogin" enabled="true">
+            <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="XPath Extractor- CheckoutToken" enabled="true">
               <stringProp name="XPathExtractor.default">Not Found</stringProp>
-              <stringProp name="XPathExtractor.refname">CheckoutLogin</stringProp>
+              <stringProp name="XPathExtractor.refname">CheckoutToken</stringProp>
               <stringProp name="XPathExtractor.matchNumber">1</stringProp>
               <stringProp name="XPathExtractor.xpathQuery">//input[@name=&apos;__RequestVerificationToken&apos;]/@value</stringProp>
               <boolProp name="XPathExtractor.validate">false</boolProp>
@@ -3418,7 +3418,7 @@
                 <elementProp name="__RequestVerificationToken" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">__RequestVerificationToken</stringProp>
-                  <stringProp name="Argument.value">${CheckoutLogin}</stringProp>
+                  <stringProp name="Argument.value">${CheckoutToken}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
@@ -3584,7 +3584,7 @@
                 <elementProp name="__RequestVerificationToken" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">__RequestVerificationToken</stringProp>
-                  <stringProp name="Argument.value">${CheckoutLogin}</stringProp>
+                  <stringProp name="Argument.value">${CheckoutToken}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
@@ -3682,6 +3682,18 @@
               </collectionProp>
             </HeaderManager>
             <hashTree/>
+            <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="User Parameters" enabled="true">
+              <collectionProp name="UserParameters.names">
+                <stringProp name="-1865487281">ShippingMethod</stringProp>
+              </collectionProp>
+              <collectionProp name="UserParameters.thread_values">
+                <collectionProp name="711762033">
+                  <stringProp name="711762002"> Ground___Shipping.FixedByWeightByTotal</stringProp>
+                </collectionProp>
+              </collectionProp>
+              <boolProp name="UserParameters.per_iteration">false</boolProp>
+            </UserParameters>
+            <hashTree/>
           </hashTree>
         </hashTree>
         <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Checkout Payment info" enabled="true">
@@ -3702,7 +3714,7 @@
                 <elementProp name="__RequestVerificationToken" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">__RequestVerificationToken</stringProp>
-                  <stringProp name="Argument.value">${CheckoutLogin}</stringProp>
+                  <stringProp name="Argument.value">${CheckoutToken}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
@@ -3800,6 +3812,18 @@
               </collectionProp>
             </HeaderManager>
             <hashTree/>
+            <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="User Parameters" enabled="true">
+              <collectionProp name="UserParameters.names">
+                <stringProp name="2044592743">PaymentMethod</stringProp>
+              </collectionProp>
+              <collectionProp name="UserParameters.thread_values">
+                <collectionProp name="372298996">
+                  <stringProp name="372298965">Payments.CheckMoneyOrder</stringProp>
+                </collectionProp>
+              </collectionProp>
+              <boolProp name="UserParameters.per_iteration">false</boolProp>
+            </UserParameters>
+            <hashTree/>
           </hashTree>
         </hashTree>
         <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Checkout- click confirm order" enabled="true">
@@ -3813,7 +3837,7 @@
                 <elementProp name="__RequestVerificationToken" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">__RequestVerificationToken</stringProp>
-                  <stringProp name="Argument.value">${CheckoutLogin}</stringProp>
+                  <stringProp name="Argument.value">${CheckoutToken}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
@@ -3924,7 +3948,7 @@
                 <elementProp name="__RequestVerificationToken" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">__RequestVerificationToken</stringProp>
-                  <stringProp name="Argument.value">${CheckoutLogin}</stringProp>
+                  <stringProp name="Argument.value">${CheckoutToken}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
